@@ -6,7 +6,7 @@
   height 100%
   width 100%
   margin 0
-  display inline-block
+  display inline-flex
   background-color default-color
 
   &:after
@@ -45,7 +45,7 @@
 
   &.horizontal
     height bar-height
-
+  
   &.left-end
     width bar-height
     max-width bar-height
@@ -89,10 +89,9 @@
     padding-left scaled-base-spacing
     padding-right scaled-base-spacing
     padding-bottom scaled-base-spacing
-    display inline-block
     font-size 150%
     height 100%
 
     &.right
-      float right
+      margin-left auto
       margin-right 5 * scaled-base-spacing
