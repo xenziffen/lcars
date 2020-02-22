@@ -552,6 +552,7 @@ h6 {
 }
 .lcars-bar.horizontal {
   height: 1.5rem;
+  min-height: 1.5rem;
 }
 .lcars-bar.left-end {
   width: 1.5rem;
@@ -644,6 +645,13 @@ h6 {
 }
 .lcars-element.button.horizontal {
   height: 1.5rem;
+  min-height: 1.5rem;
+}
+.lcars-element.button.bottom {
+  align-self: flex-end;
+}
+.lcars-element.button.right {
+  margin-left: auto;
 }
 .lcars-element .lcars-element-addition {
   display: flex;
