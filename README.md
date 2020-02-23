@@ -1,3 +1,5 @@
+![screenani](readme-res/lcarsAnimated.gif)
+
 LCARS (Library Computer Access Retrieval System)
 ================================================
 
