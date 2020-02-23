@@ -650,6 +650,10 @@ h6 {
 .lcars-element.button.bottom {
   align-self: flex-end;
 }
+.lcars-element.button.toptext {
+  align-items: flex-start;
+  padding-top: 0.25rem;
+}
 .lcars-element .lcars-element-addition {
   display: flex;
   flex-direction: column;
