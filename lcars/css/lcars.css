@@ -1,299 +1,299 @@
-.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467) !important;
+div .lcars-gray-bg {
+  background-color: rgba(34,51,85,0.467);
 }
-.lcars-white-bg {
-  background-color: #fff !important;
+div .lcars-white-bg {
+  background-color: #fff;
 }
-.lcars-black-bg {
-  background-color: #000 !important;
+div .lcars-black-bg {
+  background-color: #000;
 }
-.lcars-pale-canary-bg {
-  background-color: #ff9 !important;
+div .lcars-pale-canary-bg {
+  background-color: #ff9;
 }
-.lcars-golden-tanoi-bg {
-  background-color: #fc6 !important;
+div .lcars-golden-tanoi-bg {
+  background-color: #fc6;
 }
-.lcars-neon-carrot-bg {
-  background-color: #f93 !important;
+div .lcars-neon-carrot-bg {
+  background-color: #f93;
 }
-.lcars-eggplant-bg {
-  background-color: #646 !important;
+div .lcars-eggplant-bg {
+  background-color: #646;
 }
-.lcars-lilac-bg {
-  background-color: #c9c !important;
+div .lcars-lilac-bg {
+  background-color: #c9c;
 }
-.lcars-anakiwa-bg {
-  background-color: #9cf !important;
+div .lcars-anakiwa-bg {
+  background-color: #9cf;
 }
-.lcars-mariner-bg {
-  background-color: #36c !important;
+div .lcars-mariner-bg {
+  background-color: #36c;
 }
-.lcars-bahama-blue-bg {
-  background-color: #069 !important;
+div .lcars-bahama-blue-bg {
+  background-color: #069;
 }
-.lcars-blue-bell-bg {
-  background-color: #99c !important;
+div .lcars-blue-bell-bg {
+  background-color: #99c;
 }
-.lcars-melrose-bg {
-  background-color: #99f !important;
+div .lcars-melrose-bg {
+  background-color: #99f;
 }
-.lcars-hopbush-bg {
-  background-color: #c69 !important;
+div .lcars-hopbush-bg {
+  background-color: #c69;
 }
-.lcars-chestnut-rose-bg {
-  background-color: #c66 !important;
+div .lcars-chestnut-rose-bg {
+  background-color: #c66;
 }
-.lcars-orange-peel-bg {
-  background-color: #f96 !important;
+div .lcars-orange-peel-bg {
+  background-color: #f96;
 }
-.lcars-atomic-tangerine-bg {
-  background-color: #f90 !important;
+div .lcars-atomic-tangerine-bg {
+  background-color: #f90;
 }
-.lcars-danub-bg {
-  background-color: #68c !important;
+div .lcars-danub-bg {
+  background-color: #68c;
 }
-.lcars-indigo-bg {
-  background-color: #45b !important;
+div .lcars-indigo-bg {
+  background-color: #45b;
 }
-.lcars-lavender-purple-bg {
-  background-color: #97a !important;
+div .lcars-lavender-purple-bg {
+  background-color: #97a;
 }
-.lcars-cosmic-bg {
-  background-color: #746 !important;
+div .lcars-cosmic-bg {
+  background-color: #746;
 }
-.lcars-red-damask-bg {
-  background-color: #d64 !important;
+div .lcars-red-damask-bg {
+  background-color: #d64;
 }
-.lcars-medium-carmine-bg {
-  background-color: #a53 !important;
+div .lcars-medium-carmine-bg {
+  background-color: #a53;
 }
-.lcars-bourbon-bg {
-  background-color: #b62 !important;
+div .lcars-bourbon-bg {
+  background-color: #b62;
 }
-.lcars-sandy-brown-bg {
-  background-color: #e95 !important;
+div .lcars-sandy-brown-bg {
+  background-color: #e95;
 }
-.lcars-periwinkle-bg {
-  background-color: #cdf !important;
+div .lcars-periwinkle-bg {
+  background-color: #cdf;
 }
-.lcars-dodger-blue-bg {
-  background-color: #59f !important;
+div .lcars-dodger-blue-bg {
+  background-color: #59f;
 }
-.lcars-dodger-blue-alt-bg {
-  background-color: #36f !important;
+div .lcars-dodger-blue-alt-bg {
+  background-color: #36f;
 }
-.lcars-blue-bg {
-  background-color: #01e !important;
+div .lcars-blue-bg {
+  background-color: #01e;
 }
-.lcars-navy-blue-bg {
-  background-color: #008 !important;
+div .lcars-navy-blue-bg {
+  background-color: #008;
 }
-.lcars-husk-bg {
-  background-color: #ba5 !important;
+div .lcars-husk-bg {
+  background-color: #ba5;
 }
-.lcars-rust-bg {
-  background-color: #b41 !important;
+div .lcars-rust-bg {
+  background-color: #b41;
 }
-.lcars-tamarillo-bg {
-  background-color: #821 !important;
+div .lcars-tamarillo-bg {
+  background-color: #821;
 }
-.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467) !important;
+div .lcars-gray-border {
+  border-color: rgba(34,51,85,0.467);
 }
-.lcars-white-border {
-  border-color: #fff !important;
+div .lcars-white-border {
+  border-color: #fff;
 }
-.lcars-black-border {
-  border-color: #000 !important;
+div .lcars-black-border {
+  border-color: #000;
 }
-.lcars-pale-canary-border {
-  border-color: #ff9 !important;
+div .lcars-pale-canary-border {
+  border-color: #ff9;
 }
-.lcars-golden-tanoi-border {
-  border-color: #fc6 !important;
+div .lcars-golden-tanoi-border {
+  border-color: #fc6;
 }
-.lcars-neon-carrot-border {
-  border-color: #f93 !important;
+div .lcars-neon-carrot-border {
+  border-color: #f93;
 }
-.lcars-eggplant-border {
-  border-color: #646 !important;
+div .lcars-eggplant-border {
+  border-color: #646;
 }
-.lcars-lilac-border {
-  border-color: #c9c !important;
+div .lcars-lilac-border {
+  border-color: #c9c;
 }
-.lcars-anakiwa-border {
-  border-color: #9cf !important;
+div .lcars-anakiwa-border {
+  border-color: #9cf;
 }
-.lcars-mariner-border {
-  border-color: #36c !important;
+div .lcars-mariner-border {
+  border-color: #36c;
 }
-.lcars-bahama-blue-border {
-  border-color: #069 !important;
+div .lcars-bahama-blue-border {
+  border-color: #069;
 }
-.lcars-blue-bell-border {
-  border-color: #99c !important;
+div .lcars-blue-bell-border {
+  border-color: #99c;
 }
-.lcars-melrose-border {
-  border-color: #99f !important;
+div .lcars-melrose-border {
+  border-color: #99f;
 }
-.lcars-hopbush-border {
-  border-color: #c69 !important;
+div .lcars-hopbush-border {
+  border-color: #c69;
 }
-.lcars-chestnut-rose-border {
-  border-color: #c66 !important;
+div .lcars-chestnut-rose-border {
+  border-color: #c66;
 }
-.lcars-orange-peel-border {
-  border-color: #f96 !important;
+div .lcars-orange-peel-border {
+  border-color: #f96;
 }
-.lcars-atomic-tangerine-border {
-  border-color: #f90 !important;
+div .lcars-atomic-tangerine-border {
+  border-color: #f90;
 }
-.lcars-danub-border {
-  border-color: #68c !important;
+div .lcars-danub-border {
+  border-color: #68c;
 }
-.lcars-indigo-border {
-  border-color: #45b !important;
+div .lcars-indigo-border {
+  border-color: #45b;
 }
-.lcars-lavender-purple-border {
-  border-color: #97a !important;
+div .lcars-lavender-purple-border {
+  border-color: #97a;
 }
-.lcars-cosmic-border {
-  border-color: #746 !important;
+div .lcars-cosmic-border {
+  border-color: #746;
 }
-.lcars-red-damask-border {
-  border-color: #d64 !important;
+div .lcars-red-damask-border {
+  border-color: #d64;
 }
-.lcars-medium-carmine-border {
-  border-color: #a53 !important;
+div .lcars-medium-carmine-border {
+  border-color: #a53;
 }
-.lcars-bourbon-border {
-  border-color: #b62 !important;
+div .lcars-bourbon-border {
+  border-color: #b62;
 }
-.lcars-sandy-brown-border {
-  border-color: #e95 !important;
+div .lcars-sandy-brown-border {
+  border-color: #e95;
 }
-.lcars-periwinkle-border {
-  border-color: #cdf !important;
+div .lcars-periwinkle-border {
+  border-color: #cdf;
 }
-.lcars-dodger-blue-border {
-  border-color: #59f !important;
+div .lcars-dodger-blue-border {
+  border-color: #59f;
 }
-.lcars-dodger-blue-alt-border {
-  border-color: #36f !important;
+div .lcars-dodger-blue-alt-border {
+  border-color: #36f;
 }
-.lcars-blue-border {
-  border-color: #01e !important;
+div .lcars-blue-border {
+  border-color: #01e;
 }
-.lcars-navy-blue-border {
-  border-color: #008 !important;
+div .lcars-navy-blue-border {
+  border-color: #008;
 }
-.lcars-husk-border {
-  border-color: #ba5 !important;
+div .lcars-husk-border {
+  border-color: #ba5;
 }
-.lcars-rust-border {
-  border-color: #b41 !important;
+div .lcars-rust-border {
+  border-color: #b41;
 }
-.lcars-tamarillo-border {
-  border-color: #821 !important;
+div .lcars-tamarillo-border {
+  border-color: #821;
 }
-.lcars-gray-color {
-  color: rgba(34,51,85,0.467) !important;
+div .lcars-gray-color {
+  color: rgba(34,51,85,0.467);
 }
-.lcars-white-color {
-  color: #fff !important;
+div .lcars-white-color {
+  color: #fff;
 }
-.lcars-black-color {
-  color: #000 !important;
+div .lcars-black-color {
+  color: #000;
 }
-.lcars-pale-canary-color {
-  color: #ff9 !important;
+div .lcars-pale-canary-color {
+  color: #ff9;
 }
-.lcars-golden-tanoi-color {
-  color: #fc6 !important;
+div .lcars-golden-tanoi-color {
+  color: #fc6;
 }
-.lcars-neon-carrot-color {
-  color: #f93 !important;
+div .lcars-neon-carrot-color {
+  color: #f93;
 }
-.lcars-eggplant-color {
-  color: #646 !important;
+div .lcars-eggplant-color {
+  color: #646;
 }
-.lcars-lilac-color {
-  color: #c9c !important;
+div .lcars-lilac-color {
+  color: #c9c;
 }
-.lcars-anakiwa-color {
-  color: #9cf !important;
+div .lcars-anakiwa-color {
+  color: #9cf;
 }
-.lcars-mariner-color {
-  color: #36c !important;
+div .lcars-mariner-color {
+  color: #36c;
 }
-.lcars-bahama-blue-color {
-  color: #069 !important;
+div .lcars-bahama-blue-color {
+  color: #069;
 }
-.lcars-blue-bell-color {
-  color: #99c !important;
+div .lcars-blue-bell-color {
+  color: #99c;
 }
-.lcars-melrose-color {
-  color: #99f !important;
+div .lcars-melrose-color {
+  color: #99f;
 }
-.lcars-hopbush-color {
-  color: #c69 !important;
+div .lcars-hopbush-color {
+  color: #c69;
 }
-.lcars-chestnut-rose-color {
-  color: #c66 !important;
+div .lcars-chestnut-rose-color {
+  color: #c66;
 }
-.lcars-orange-peel-color {
-  color: #f96 !important;
+div .lcars-orange-peel-color {
+  color: #f96;
 }
-.lcars-atomic-tangerine-color {
-  color: #f90 !important;
+div .lcars-atomic-tangerine-color {
+  color: #f90;
 }
-.lcars-danub-color {
-  color: #68c !important;
+div .lcars-danub-color {
+  color: #68c;
 }
-.lcars-indigo-color {
-  color: #45b !important;
+div .lcars-indigo-color {
+  color: #45b;
 }
-.lcars-lavender-purple-color {
-  color: #97a !important;
+div .lcars-lavender-purple-color {
+  color: #97a;
 }
-.lcars-cosmic-color {
-  color: #746 !important;
+div .lcars-cosmic-color {
+  color: #746;
 }
-.lcars-red-damask-color {
-  color: #d64 !important;
+div .lcars-red-damask-color {
+  color: #d64;
 }
-.lcars-medium-carmine-color {
-  color: #a53 !important;
+div .lcars-medium-carmine-color {
+  color: #a53;
 }
-.lcars-bourbon-color {
-  color: #b62 !important;
+div .lcars-bourbon-color {
+  color: #b62;
 }
-.lcars-sandy-brown-color {
-  color: #e95 !important;
+div .lcars-sandy-brown-color {
+  color: #e95;
 }
-.lcars-periwinkle-color {
-  color: #cdf !important;
+div .lcars-periwinkle-color {
+  color: #cdf;
 }
-.lcars-dodger-blue-color {
-  color: #59f !important;
+div .lcars-dodger-blue-color {
+  color: #59f;
 }
-.lcars-dodger-blue-alt-color {
-  color: #36f !important;
+div .lcars-dodger-blue-alt-color {
+  color: #36f;
 }
-.lcars-blue-color {
-  color: #01e !important;
+div .lcars-blue-color {
+  color: #01e;
 }
-.lcars-navy-blue-color {
-  color: #008 !important;
+div .lcars-navy-blue-color {
+  color: #008;
 }
-.lcars-husk-color {
-  color: #ba5 !important;
+div .lcars-husk-color {
+  color: #ba5;
 }
-.lcars-rust-color {
-  color: #b41 !important;
+div .lcars-rust-color {
+  color: #b41;
 }
-.lcars-tamarillo-color {
-  color: #821 !important;
+div .lcars-tamarillo-color {
+  color: #821;
 }
 html,
 body {
@@ -641,7 +641,7 @@ h6 {
   cursor: pointer;
 }
 .lcars-element.button:active {
-  background-color: #c69;
+  background-color: #c69 !important;
 }
 .lcars-element.button.horizontal {
   height: 1.5rem;
@@ -649,9 +649,6 @@ h6 {
 }
 .lcars-element.button.bottom {
   align-self: flex-end;
-}
-.lcars-element.button.right {
-  margin-left: auto;
 }
 .lcars-element .lcars-element-addition {
   display: flex;
@@ -1722,4 +1719,1087 @@ a.lcars-text-box.blink {
 }
 .lcars-u-16.half {
   width: 119.875rem;
+}
+:root {
+  --animation-time: 2s;
+  --active-color: #59f;
+}
+div .lcars-gray-active-bg-s {
+  animation: active-gray 4s steps(1) infinite;
+}
+div .lcars-white-active-bg-s {
+  animation: active-white 4s steps(1) infinite;
+}
+div .lcars-black-active-bg-s {
+  animation: active-black 4s steps(1) infinite;
+}
+div .lcars-pale-canary-active-bg-s {
+  animation: active-pale-canary 4s steps(1) infinite;
+}
+div .lcars-golden-tanoi-active-bg-s {
+  animation: active-golden-tanoi 4s steps(1) infinite;
+}
+div .lcars-neon-carrot-active-bg-s {
+  animation: active-neon-carrot 4s steps(1) infinite;
+}
+div .lcars-eggplant-active-bg-s {
+  animation: active-eggplant 4s steps(1) infinite;
+}
+div .lcars-lilac-active-bg-s {
+  animation: active-lilac 4s steps(1) infinite;
+}
+div .lcars-anakiwa-active-bg-s {
+  animation: active-anakiwa 4s steps(1) infinite;
+}
+div .lcars-mariner-active-bg-s {
+  animation: active-mariner 4s steps(1) infinite;
+}
+div .lcars-bahama-blue-active-bg-s {
+  animation: active-bahama-blue 4s steps(1) infinite;
+}
+div .lcars-blue-bell-active-bg-s {
+  animation: active-blue-bell 4s steps(1) infinite;
+}
+div .lcars-melrose-active-bg-s {
+  animation: active-melrose 4s steps(1) infinite;
+}
+div .lcars-hopbush-active-bg-s {
+  animation: active-hopbush 4s steps(1) infinite;
+}
+div .lcars-chestnut-rose-active-bg-s {
+  animation: active-chestnut-rose 4s steps(1) infinite;
+}
+div .lcars-orange-peel-active-bg-s {
+  animation: active-orange-peel 4s steps(1) infinite;
+}
+div .lcars-atomic-tangerine-active-bg-s {
+  animation: active-atomic-tangerine 4s steps(1) infinite;
+}
+div .lcars-danub-active-bg-s {
+  animation: active-danub 4s steps(1) infinite;
+}
+div .lcars-indigo-active-bg-s {
+  animation: active-indigo 4s steps(1) infinite;
+}
+div .lcars-lavender-purple-active-bg-s {
+  animation: active-lavender-purple 4s steps(1) infinite;
+}
+div .lcars-cosmic-active-bg-s {
+  animation: active-cosmic 4s steps(1) infinite;
+}
+div .lcars-red-damask-active-bg-s {
+  animation: active-red-damask 4s steps(1) infinite;
+}
+div .lcars-medium-carmine-active-bg-s {
+  animation: active-medium-carmine 4s steps(1) infinite;
+}
+div .lcars-bourbon-active-bg-s {
+  animation: active-bourbon 4s steps(1) infinite;
+}
+div .lcars-sandy-brown-active-bg-s {
+  animation: active-sandy-brown 4s steps(1) infinite;
+}
+div .lcars-periwinkle-active-bg-s {
+  animation: active-periwinkle 4s steps(1) infinite;
+}
+div .lcars-dodger-blue-active-bg-s {
+  animation: active-dodger-blue 4s steps(1) infinite;
+}
+div .lcars-dodger-blue-alt-active-bg-s {
+  animation: active-dodger-blue-alt 4s steps(1) infinite;
+}
+div .lcars-blue-active-bg-s {
+  animation: active-blue 4s steps(1) infinite;
+}
+div .lcars-navy-blue-active-bg-s {
+  animation: active-navy-blue 4s steps(1) infinite;
+}
+div .lcars-husk-active-bg-s {
+  animation: active-husk 4s steps(1) infinite;
+}
+div .lcars-rust-active-bg-s {
+  animation: active-rust 4s steps(1) infinite;
+}
+div .lcars-tamarillo-active-bg-s {
+  animation: active-tamarillo 4s steps(1) infinite;
+}
+div .lcars-gray-active-bg-m {
+  animation: active-gray 8s steps(1) infinite;
+}
+div .lcars-white-active-bg-m {
+  animation: active-white 8s steps(1) infinite;
+}
+div .lcars-black-active-bg-m {
+  animation: active-black 8s steps(1) infinite;
+}
+div .lcars-pale-canary-active-bg-m {
+  animation: active-pale-canary 8s steps(1) infinite;
+}
+div .lcars-golden-tanoi-active-bg-m {
+  animation: active-golden-tanoi 8s steps(1) infinite;
+}
+div .lcars-neon-carrot-active-bg-m {
+  animation: active-neon-carrot 8s steps(1) infinite;
+}
+div .lcars-eggplant-active-bg-m {
+  animation: active-eggplant 8s steps(1) infinite;
+}
+div .lcars-lilac-active-bg-m {
+  animation: active-lilac 8s steps(1) infinite;
+}
+div .lcars-anakiwa-active-bg-m {
+  animation: active-anakiwa 8s steps(1) infinite;
+}
+div .lcars-mariner-active-bg-m {
+  animation: active-mariner 8s steps(1) infinite;
+}
+div .lcars-bahama-blue-active-bg-m {
+  animation: active-bahama-blue 8s steps(1) infinite;
+}
+div .lcars-blue-bell-active-bg-m {
+  animation: active-blue-bell 8s steps(1) infinite;
+}
+div .lcars-melrose-active-bg-m {
+  animation: active-melrose 8s steps(1) infinite;
+}
+div .lcars-hopbush-active-bg-m {
+  animation: active-hopbush 8s steps(1) infinite;
+}
+div .lcars-chestnut-rose-active-bg-m {
+  animation: active-chestnut-rose 8s steps(1) infinite;
+}
+div .lcars-orange-peel-active-bg-m {
+  animation: active-orange-peel 8s steps(1) infinite;
+}
+div .lcars-atomic-tangerine-active-bg-m {
+  animation: active-atomic-tangerine 8s steps(1) infinite;
+}
+div .lcars-danub-active-bg-m {
+  animation: active-danub 8s steps(1) infinite;
+}
+div .lcars-indigo-active-bg-m {
+  animation: active-indigo 8s steps(1) infinite;
+}
+div .lcars-lavender-purple-active-bg-m {
+  animation: active-lavender-purple 8s steps(1) infinite;
+}
+div .lcars-cosmic-active-bg-m {
+  animation: active-cosmic 8s steps(1) infinite;
+}
+div .lcars-red-damask-active-bg-m {
+  animation: active-red-damask 8s steps(1) infinite;
+}
+div .lcars-medium-carmine-active-bg-m {
+  animation: active-medium-carmine 8s steps(1) infinite;
+}
+div .lcars-bourbon-active-bg-m {
+  animation: active-bourbon 8s steps(1) infinite;
+}
+div .lcars-sandy-brown-active-bg-m {
+  animation: active-sandy-brown 8s steps(1) infinite;
+}
+div .lcars-periwinkle-active-bg-m {
+  animation: active-periwinkle 8s steps(1) infinite;
+}
+div .lcars-dodger-blue-active-bg-m {
+  animation: active-dodger-blue 8s steps(1) infinite;
+}
+div .lcars-dodger-blue-alt-active-bg-m {
+  animation: active-dodger-blue-alt 8s steps(1) infinite;
+}
+div .lcars-blue-active-bg-m {
+  animation: active-blue 8s steps(1) infinite;
+}
+div .lcars-navy-blue-active-bg-m {
+  animation: active-navy-blue 8s steps(1) infinite;
+}
+div .lcars-husk-active-bg-m {
+  animation: active-husk 8s steps(1) infinite;
+}
+div .lcars-rust-active-bg-m {
+  animation: active-rust 8s steps(1) infinite;
+}
+div .lcars-tamarillo-active-bg-m {
+  animation: active-tamarillo 8s steps(1) infinite;
+}
+div .lcars-gray-active-bg-l {
+  animation: active-gray 16s steps(1) infinite;
+}
+div .lcars-white-active-bg-l {
+  animation: active-white 16s steps(1) infinite;
+}
+div .lcars-black-active-bg-l {
+  animation: active-black 16s steps(1) infinite;
+}
+div .lcars-pale-canary-active-bg-l {
+  animation: active-pale-canary 16s steps(1) infinite;
+}
+div .lcars-golden-tanoi-active-bg-l {
+  animation: active-golden-tanoi 16s steps(1) infinite;
+}
+div .lcars-neon-carrot-active-bg-l {
+  animation: active-neon-carrot 16s steps(1) infinite;
+}
+div .lcars-eggplant-active-bg-l {
+  animation: active-eggplant 16s steps(1) infinite;
+}
+div .lcars-lilac-active-bg-l {
+  animation: active-lilac 16s steps(1) infinite;
+}
+div .lcars-anakiwa-active-bg-l {
+  animation: active-anakiwa 16s steps(1) infinite;
+}
+div .lcars-mariner-active-bg-l {
+  animation: active-mariner 16s steps(1) infinite;
+}
+div .lcars-bahama-blue-active-bg-l {
+  animation: active-bahama-blue 16s steps(1) infinite;
+}
+div .lcars-blue-bell-active-bg-l {
+  animation: active-blue-bell 16s steps(1) infinite;
+}
+div .lcars-melrose-active-bg-l {
+  animation: active-melrose 16s steps(1) infinite;
+}
+div .lcars-hopbush-active-bg-l {
+  animation: active-hopbush 16s steps(1) infinite;
+}
+div .lcars-chestnut-rose-active-bg-l {
+  animation: active-chestnut-rose 16s steps(1) infinite;
+}
+div .lcars-orange-peel-active-bg-l {
+  animation: active-orange-peel 16s steps(1) infinite;
+}
+div .lcars-atomic-tangerine-active-bg-l {
+  animation: active-atomic-tangerine 16s steps(1) infinite;
+}
+div .lcars-danub-active-bg-l {
+  animation: active-danub 16s steps(1) infinite;
+}
+div .lcars-indigo-active-bg-l {
+  animation: active-indigo 16s steps(1) infinite;
+}
+div .lcars-lavender-purple-active-bg-l {
+  animation: active-lavender-purple 16s steps(1) infinite;
+}
+div .lcars-cosmic-active-bg-l {
+  animation: active-cosmic 16s steps(1) infinite;
+}
+div .lcars-red-damask-active-bg-l {
+  animation: active-red-damask 16s steps(1) infinite;
+}
+div .lcars-medium-carmine-active-bg-l {
+  animation: active-medium-carmine 16s steps(1) infinite;
+}
+div .lcars-bourbon-active-bg-l {
+  animation: active-bourbon 16s steps(1) infinite;
+}
+div .lcars-sandy-brown-active-bg-l {
+  animation: active-sandy-brown 16s steps(1) infinite;
+}
+div .lcars-periwinkle-active-bg-l {
+  animation: active-periwinkle 16s steps(1) infinite;
+}
+div .lcars-dodger-blue-active-bg-l {
+  animation: active-dodger-blue 16s steps(1) infinite;
+}
+div .lcars-dodger-blue-alt-active-bg-l {
+  animation: active-dodger-blue-alt 16s steps(1) infinite;
+}
+div .lcars-blue-active-bg-l {
+  animation: active-blue 16s steps(1) infinite;
+}
+div .lcars-navy-blue-active-bg-l {
+  animation: active-navy-blue 16s steps(1) infinite;
+}
+div .lcars-husk-active-bg-l {
+  animation: active-husk 16s steps(1) infinite;
+}
+div .lcars-rust-active-bg-l {
+  animation: active-rust 16s steps(1) infinite;
+}
+div .lcars-tamarillo-active-bg-l {
+  animation: active-tamarillo 16s steps(1) infinite;
+}
+div .lcars-gray-active-bg-i {
+  animation: active-gray 30s steps(1) infinite;
+}
+div .lcars-white-active-bg-i {
+  animation: active-white 30s steps(1) infinite;
+}
+div .lcars-black-active-bg-i {
+  animation: active-black 30s steps(1) infinite;
+}
+div .lcars-pale-canary-active-bg-i {
+  animation: active-pale-canary 30s steps(1) infinite;
+}
+div .lcars-golden-tanoi-active-bg-i {
+  animation: active-golden-tanoi 30s steps(1) infinite;
+}
+div .lcars-neon-carrot-active-bg-i {
+  animation: active-neon-carrot 30s steps(1) infinite;
+}
+div .lcars-eggplant-active-bg-i {
+  animation: active-eggplant 30s steps(1) infinite;
+}
+div .lcars-lilac-active-bg-i {
+  animation: active-lilac 30s steps(1) infinite;
+}
+div .lcars-anakiwa-active-bg-i {
+  animation: active-anakiwa 30s steps(1) infinite;
+}
+div .lcars-mariner-active-bg-i {
+  animation: active-mariner 30s steps(1) infinite;
+}
+div .lcars-bahama-blue-active-bg-i {
+  animation: active-bahama-blue 30s steps(1) infinite;
+}
+div .lcars-blue-bell-active-bg-i {
+  animation: active-blue-bell 30s steps(1) infinite;
+}
+div .lcars-melrose-active-bg-i {
+  animation: active-melrose 30s steps(1) infinite;
+}
+div .lcars-hopbush-active-bg-i {
+  animation: active-hopbush 30s steps(1) infinite;
+}
+div .lcars-chestnut-rose-active-bg-i {
+  animation: active-chestnut-rose 30s steps(1) infinite;
+}
+div .lcars-orange-peel-active-bg-i {
+  animation: active-orange-peel 30s steps(1) infinite;
+}
+div .lcars-atomic-tangerine-active-bg-i {
+  animation: active-atomic-tangerine 30s steps(1) infinite;
+}
+div .lcars-danub-active-bg-i {
+  animation: active-danub 30s steps(1) infinite;
+}
+div .lcars-indigo-active-bg-i {
+  animation: active-indigo 30s steps(1) infinite;
+}
+div .lcars-lavender-purple-active-bg-i {
+  animation: active-lavender-purple 30s steps(1) infinite;
+}
+div .lcars-cosmic-active-bg-i {
+  animation: active-cosmic 30s steps(1) infinite;
+}
+div .lcars-red-damask-active-bg-i {
+  animation: active-red-damask 30s steps(1) infinite;
+}
+div .lcars-medium-carmine-active-bg-i {
+  animation: active-medium-carmine 30s steps(1) infinite;
+}
+div .lcars-bourbon-active-bg-i {
+  animation: active-bourbon 30s steps(1) infinite;
+}
+div .lcars-sandy-brown-active-bg-i {
+  animation: active-sandy-brown 30s steps(1) infinite;
+}
+div .lcars-periwinkle-active-bg-i {
+  animation: active-periwinkle 30s steps(1) infinite;
+}
+div .lcars-dodger-blue-active-bg-i {
+  animation: active-dodger-blue 30s steps(1) infinite;
+}
+div .lcars-dodger-blue-alt-active-bg-i {
+  animation: active-dodger-blue-alt 30s steps(1) infinite;
+}
+div .lcars-blue-active-bg-i {
+  animation: active-blue 30s steps(1) infinite;
+}
+div .lcars-navy-blue-active-bg-i {
+  animation: active-navy-blue 30s steps(1) infinite;
+}
+div .lcars-husk-active-bg-i {
+  animation: active-husk 30s steps(1) infinite;
+}
+div .lcars-rust-active-bg-i {
+  animation: active-rust 30s steps(1) infinite;
+}
+div .lcars-tamarillo-active-bg-i {
+  animation: active-tamarillo 30s steps(1) infinite;
+}
+@-moz-keyframes active-gray {
+  50% {
+    background-color: rgba(34,51,85,0.467);
+  }
+}
+@-webkit-keyframes active-gray {
+  50% {
+    background-color: rgba(34,51,85,0.467);
+  }
+}
+@-o-keyframes active-gray {
+  50% {
+    background-color: rgba(34,51,85,0.467);
+  }
+}
+@keyframes active-gray {
+  50% {
+    background-color: rgba(34,51,85,0.467);
+  }
+}
+@-moz-keyframes active-white {
+  50% {
+    background-color: #fff;
+  }
+}
+@-webkit-keyframes active-white {
+  50% {
+    background-color: #fff;
+  }
+}
+@-o-keyframes active-white {
+  50% {
+    background-color: #fff;
+  }
+}
+@keyframes active-white {
+  50% {
+    background-color: #fff;
+  }
+}
+@-moz-keyframes active-black {
+  50% {
+    background-color: #000;
+  }
+}
+@-webkit-keyframes active-black {
+  50% {
+    background-color: #000;
+  }
+}
+@-o-keyframes active-black {
+  50% {
+    background-color: #000;
+  }
+}
+@keyframes active-black {
+  50% {
+    background-color: #000;
+  }
+}
+@-moz-keyframes active-pale-canary {
+  50% {
+    background-color: #ff9;
+  }
+}
+@-webkit-keyframes active-pale-canary {
+  50% {
+    background-color: #ff9;
+  }
+}
+@-o-keyframes active-pale-canary {
+  50% {
+    background-color: #ff9;
+  }
+}
+@keyframes active-pale-canary {
+  50% {
+    background-color: #ff9;
+  }
+}
+@-moz-keyframes active-golden-tanoi {
+  50% {
+    background-color: #fc6;
+  }
+}
+@-webkit-keyframes active-golden-tanoi {
+  50% {
+    background-color: #fc6;
+  }
+}
+@-o-keyframes active-golden-tanoi {
+  50% {
+    background-color: #fc6;
+  }
+}
+@keyframes active-golden-tanoi {
+  50% {
+    background-color: #fc6;
+  }
+}
+@-moz-keyframes active-neon-carrot {
+  50% {
+    background-color: #f93;
+  }
+}
+@-webkit-keyframes active-neon-carrot {
+  50% {
+    background-color: #f93;
+  }
+}
+@-o-keyframes active-neon-carrot {
+  50% {
+    background-color: #f93;
+  }
+}
+@keyframes active-neon-carrot {
+  50% {
+    background-color: #f93;
+  }
+}
+@-moz-keyframes active-eggplant {
+  50% {
+    background-color: #646;
+  }
+}
+@-webkit-keyframes active-eggplant {
+  50% {
+    background-color: #646;
+  }
+}
+@-o-keyframes active-eggplant {
+  50% {
+    background-color: #646;
+  }
+}
+@keyframes active-eggplant {
+  50% {
+    background-color: #646;
+  }
+}
+@-moz-keyframes active-lilac {
+  50% {
+    background-color: #c9c;
+  }
+}
+@-webkit-keyframes active-lilac {
+  50% {
+    background-color: #c9c;
+  }
+}
+@-o-keyframes active-lilac {
+  50% {
+    background-color: #c9c;
+  }
+}
+@keyframes active-lilac {
+  50% {
+    background-color: #c9c;
+  }
+}
+@-moz-keyframes active-anakiwa {
+  50% {
+    background-color: #9cf;
+  }
+}
+@-webkit-keyframes active-anakiwa {
+  50% {
+    background-color: #9cf;
+  }
+}
+@-o-keyframes active-anakiwa {
+  50% {
+    background-color: #9cf;
+  }
+}
+@keyframes active-anakiwa {
+  50% {
+    background-color: #9cf;
+  }
+}
+@-moz-keyframes active-mariner {
+  50% {
+    background-color: #36c;
+  }
+}
+@-webkit-keyframes active-mariner {
+  50% {
+    background-color: #36c;
+  }
+}
+@-o-keyframes active-mariner {
+  50% {
+    background-color: #36c;
+  }
+}
+@keyframes active-mariner {
+  50% {
+    background-color: #36c;
+  }
+}
+@-moz-keyframes active-bahama-blue {
+  50% {
+    background-color: #069;
+  }
+}
+@-webkit-keyframes active-bahama-blue {
+  50% {
+    background-color: #069;
+  }
+}
+@-o-keyframes active-bahama-blue {
+  50% {
+    background-color: #069;
+  }
+}
+@keyframes active-bahama-blue {
+  50% {
+    background-color: #069;
+  }
+}
+@-moz-keyframes active-blue-bell {
+  50% {
+    background-color: #99c;
+  }
+}
+@-webkit-keyframes active-blue-bell {
+  50% {
+    background-color: #99c;
+  }
+}
+@-o-keyframes active-blue-bell {
+  50% {
+    background-color: #99c;
+  }
+}
+@keyframes active-blue-bell {
+  50% {
+    background-color: #99c;
+  }
+}
+@-moz-keyframes active-melrose {
+  50% {
+    background-color: #99f;
+  }
+}
+@-webkit-keyframes active-melrose {
+  50% {
+    background-color: #99f;
+  }
+}
+@-o-keyframes active-melrose {
+  50% {
+    background-color: #99f;
+  }
+}
+@keyframes active-melrose {
+  50% {
+    background-color: #99f;
+  }
+}
+@-moz-keyframes active-hopbush {
+  50% {
+    background-color: #c69;
+  }
+}
+@-webkit-keyframes active-hopbush {
+  50% {
+    background-color: #c69;
+  }
+}
+@-o-keyframes active-hopbush {
+  50% {
+    background-color: #c69;
+  }
+}
+@keyframes active-hopbush {
+  50% {
+    background-color: #c69;
+  }
+}
+@-moz-keyframes active-chestnut-rose {
+  50% {
+    background-color: #c66;
+  }
+}
+@-webkit-keyframes active-chestnut-rose {
+  50% {
+    background-color: #c66;
+  }
+}
+@-o-keyframes active-chestnut-rose {
+  50% {
+    background-color: #c66;
+  }
+}
+@keyframes active-chestnut-rose {
+  50% {
+    background-color: #c66;
+  }
+}
+@-moz-keyframes active-orange-peel {
+  50% {
+    background-color: #f96;
+  }
+}
+@-webkit-keyframes active-orange-peel {
+  50% {
+    background-color: #f96;
+  }
+}
+@-o-keyframes active-orange-peel {
+  50% {
+    background-color: #f96;
+  }
+}
+@keyframes active-orange-peel {
+  50% {
+    background-color: #f96;
+  }
+}
+@-moz-keyframes active-atomic-tangerine {
+  50% {
+    background-color: #f90;
+  }
+}
+@-webkit-keyframes active-atomic-tangerine {
+  50% {
+    background-color: #f90;
+  }
+}
+@-o-keyframes active-atomic-tangerine {
+  50% {
+    background-color: #f90;
+  }
+}
+@keyframes active-atomic-tangerine {
+  50% {
+    background-color: #f90;
+  }
+}
+@-moz-keyframes active-danub {
+  50% {
+    background-color: #68c;
+  }
+}
+@-webkit-keyframes active-danub {
+  50% {
+    background-color: #68c;
+  }
+}
+@-o-keyframes active-danub {
+  50% {
+    background-color: #68c;
+  }
+}
+@keyframes active-danub {
+  50% {
+    background-color: #68c;
+  }
+}
+@-moz-keyframes active-indigo {
+  50% {
+    background-color: #45b;
+  }
+}
+@-webkit-keyframes active-indigo {
+  50% {
+    background-color: #45b;
+  }
+}
+@-o-keyframes active-indigo {
+  50% {
+    background-color: #45b;
+  }
+}
+@keyframes active-indigo {
+  50% {
+    background-color: #45b;
+  }
+}
+@-moz-keyframes active-lavender-purple {
+  50% {
+    background-color: #97a;
+  }
+}
+@-webkit-keyframes active-lavender-purple {
+  50% {
+    background-color: #97a;
+  }
+}
+@-o-keyframes active-lavender-purple {
+  50% {
+    background-color: #97a;
+  }
+}
+@keyframes active-lavender-purple {
+  50% {
+    background-color: #97a;
+  }
+}
+@-moz-keyframes active-cosmic {
+  50% {
+    background-color: #746;
+  }
+}
+@-webkit-keyframes active-cosmic {
+  50% {
+    background-color: #746;
+  }
+}
+@-o-keyframes active-cosmic {
+  50% {
+    background-color: #746;
+  }
+}
+@keyframes active-cosmic {
+  50% {
+    background-color: #746;
+  }
+}
+@-moz-keyframes active-red-damask {
+  50% {
+    background-color: #d64;
+  }
+}
+@-webkit-keyframes active-red-damask {
+  50% {
+    background-color: #d64;
+  }
+}
+@-o-keyframes active-red-damask {
+  50% {
+    background-color: #d64;
+  }
+}
+@keyframes active-red-damask {
+  50% {
+    background-color: #d64;
+  }
+}
+@-moz-keyframes active-medium-carmine {
+  50% {
+    background-color: #a53;
+  }
+}
+@-webkit-keyframes active-medium-carmine {
+  50% {
+    background-color: #a53;
+  }
+}
+@-o-keyframes active-medium-carmine {
+  50% {
+    background-color: #a53;
+  }
+}
+@keyframes active-medium-carmine {
+  50% {
+    background-color: #a53;
+  }
+}
+@-moz-keyframes active-bourbon {
+  50% {
+    background-color: #b62;
+  }
+}
+@-webkit-keyframes active-bourbon {
+  50% {
+    background-color: #b62;
+  }
+}
+@-o-keyframes active-bourbon {
+  50% {
+    background-color: #b62;
+  }
+}
+@keyframes active-bourbon {
+  50% {
+    background-color: #b62;
+  }
+}
+@-moz-keyframes active-sandy-brown {
+  50% {
+    background-color: #e95;
+  }
+}
+@-webkit-keyframes active-sandy-brown {
+  50% {
+    background-color: #e95;
+  }
+}
+@-o-keyframes active-sandy-brown {
+  50% {
+    background-color: #e95;
+  }
+}
+@keyframes active-sandy-brown {
+  50% {
+    background-color: #e95;
+  }
+}
+@-moz-keyframes active-periwinkle {
+  50% {
+    background-color: #cdf;
+  }
+}
+@-webkit-keyframes active-periwinkle {
+  50% {
+    background-color: #cdf;
+  }
+}
+@-o-keyframes active-periwinkle {
+  50% {
+    background-color: #cdf;
+  }
+}
+@keyframes active-periwinkle {
+  50% {
+    background-color: #cdf;
+  }
+}
+@-moz-keyframes active-dodger-blue {
+  50% {
+    background-color: #59f;
+  }
+}
+@-webkit-keyframes active-dodger-blue {
+  50% {
+    background-color: #59f;
+  }
+}
+@-o-keyframes active-dodger-blue {
+  50% {
+    background-color: #59f;
+  }
+}
+@keyframes active-dodger-blue {
+  50% {
+    background-color: #59f;
+  }
+}
+@-moz-keyframes active-dodger-blue-alt {
+  50% {
+    background-color: #36f;
+  }
+}
+@-webkit-keyframes active-dodger-blue-alt {
+  50% {
+    background-color: #36f;
+  }
+}
+@-o-keyframes active-dodger-blue-alt {
+  50% {
+    background-color: #36f;
+  }
+}
+@keyframes active-dodger-blue-alt {
+  50% {
+    background-color: #36f;
+  }
+}
+@-moz-keyframes active-blue {
+  50% {
+    background-color: #01e;
+  }
+}
+@-webkit-keyframes active-blue {
+  50% {
+    background-color: #01e;
+  }
+}
+@-o-keyframes active-blue {
+  50% {
+    background-color: #01e;
+  }
+}
+@keyframes active-blue {
+  50% {
+    background-color: #01e;
+  }
+}
+@-moz-keyframes active-navy-blue {
+  50% {
+    background-color: #008;
+  }
+}
+@-webkit-keyframes active-navy-blue {
+  50% {
+    background-color: #008;
+  }
+}
+@-o-keyframes active-navy-blue {
+  50% {
+    background-color: #008;
+  }
+}
+@keyframes active-navy-blue {
+  50% {
+    background-color: #008;
+  }
+}
+@-moz-keyframes active-husk {
+  50% {
+    background-color: #ba5;
+  }
+}
+@-webkit-keyframes active-husk {
+  50% {
+    background-color: #ba5;
+  }
+}
+@-o-keyframes active-husk {
+  50% {
+    background-color: #ba5;
+  }
+}
+@keyframes active-husk {
+  50% {
+    background-color: #ba5;
+  }
+}
+@-moz-keyframes active-rust {
+  50% {
+    background-color: #b41;
+  }
+}
+@-webkit-keyframes active-rust {
+  50% {
+    background-color: #b41;
+  }
+}
+@-o-keyframes active-rust {
+  50% {
+    background-color: #b41;
+  }
+}
+@keyframes active-rust {
+  50% {
+    background-color: #b41;
+  }
+}
+@-moz-keyframes active-tamarillo {
+  50% {
+    background-color: #821;
+  }
+}
+@-webkit-keyframes active-tamarillo {
+  50% {
+    background-color: #821;
+  }
+}
+@-o-keyframes active-tamarillo {
+  50% {
+    background-color: #821;
+  }
+}
+@keyframes active-tamarillo {
+  50% {
+    background-color: #821;
+  }
+}
+.lcars-active {
+  animation: active 8s steps(1) infinite;
+}
+@-moz-keyframes active {
+  50% {
+    background-color: var(--active-color);
+  }
+}
+@-webkit-keyframes active {
+  50% {
+    background-color: var(--active-color);
+  }
+}
+@-o-keyframes active {
+  50% {
+    background-color: var(--active-color);
+  }
+}
+@keyframes active {
+  50% {
+    background-color: var(--active-color);
+  }
 }

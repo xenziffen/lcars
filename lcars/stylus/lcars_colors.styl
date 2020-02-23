@@ -44,11 +44,20 @@ colors = {
 default-color = colors.golden-tanoi
 default-color-highlight = colors.hopbush
 
+// It works to specify all tags below, 
+// but if we really end up wanting to color an HTML element that is
+// not a decendent of a div we will just let it break.
+// But that's a lot less likely to break than !important
+
+// [[ All text tags ]]
+// blockquote, dd, div, dl, dt, figcaption, figure, hr, li, main, ol, p, pre, ul, h1, h2, h3, h4, h5, h6
+		
 // Creates dynamic color classes
 create-colors(prop, suffix, colors)
 	for c, v in colors
-		.{prefix}{c}-{suffix}
-			{prop} v!important
+		div .{prefix}{c}-{suffix}
+			{prop} v // if everything is important, nothing is // {prop} v!important
+
 
 // LCARS colors (background-color)
 create-colors('background-color', 'bg', colors)

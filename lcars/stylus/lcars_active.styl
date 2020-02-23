@@ -1,0 +1,42 @@
+// LCARS Active
+:root
+  --animation-time 2s
+  --active-color colors.dodger-blue
+
+short-time = 4s
+medium-time = 2 * short-time
+long-time = 2 * medium-time
+infrequent = 30s
+
+// default active animation
+@keyframes active
+  50%
+    background-color var(--active-color)
+
+// Creates active animations
+create-animations(suffix, colors)
+  for c, v in colors
+    name = suffix + c
+    @keyframes name
+      50%
+        background-color v
+
+
+// Creates active color classes
+create-colors(prop, suffix, duration, colors)
+	for c, v in colors
+    div .{prefix}{c}-{suffix}
+      {prop} active- + c duration steps(1) infinite
+
+
+// LCARS colors (background-color)
+create-colors('animation', 'active-bg-s', short-time, colors)
+create-colors('animation', 'active-bg-m', medium-time, colors)
+create-colors('animation', 'active-bg-l', long-time, colors)
+create-colors('animation', 'active-bg-i', infrequent, colors)
+create-animations('active-', colors)
+
+
+animation-name = $animate-prefix
+.{prefix}active
+  animation active medium-time steps(1) infinite
