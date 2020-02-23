@@ -15,7 +15,7 @@ Lcars is written in [Stylus](http://learnboost.github.io/stylus/).
 
 ## Demo And Documentation
 
-[See](http://joernweissenborn.github.io/lcars/)
+Load the [project](https://github.com/xenziffen/lcars) index.html page, which is a template model and guide in itself.
 
 ## Problems Or Feature Requests
 
