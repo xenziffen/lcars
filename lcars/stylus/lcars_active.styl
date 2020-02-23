@@ -1,25 +1,30 @@
 // LCARS Active
 :root
-  --animation-time 2s
-  --active-color colors.dodger-blue
+  --animation-delay 2s // javascript should update this to a random value between 2 and 20
+  --active-color default-color-highlight
 
-short-time = 4s
-medium-time = 2 * short-time
-long-time = 2 * medium-time
-infrequent = 30s
+short-time = 11s
+medium-time = 3 * short-time
+long-time = 5 * medium-time
+infrequent = 19 * short-time
 
 // default active animation
 @keyframes active
   50%
     background-color var(--active-color)
 
-// Creates active animations
+// Creates active animations - I'd like to introduce variability, but each variant of animation requires a new class
+// this initial animation toggles between an active background color and no specified color
 create-animations(suffix, colors)
   for c, v in colors
     name = suffix + c
     @keyframes name
-      50%
+      65%
         background-color v
+      // 20%, 45%, 70%, 95%
+      //   background-color none
+      // 7%, 32%, 58%, 83%, 100%
+      //   background-color v
 
 
 // Creates active color classes
