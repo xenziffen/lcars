@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- Chrome, Firefox OS and Opera -->
+	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="black">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="black">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<title>LCARS - DIVIDED</title>
+	<title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
   <style>
 
@@ -30,61 +30,40 @@
 
 		<!-- HEADER ==================================================== -->
 
-		<div class="lcars-region">
-			<div id="header" class="lcars-row header">
+		<div class="header lcars-row">
 
-				<!-- ELBOW -->
-				<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
 
-				<!-- BAR WITH TITLE -->
-				<div class="lcars-bar spacer"></div>
-				<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
-				<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-indigo-bg lcars-u-2-1">22</div>
-				
-				<div class="lcars-bar horizontal">
-					<div class="lcars-title right">LCARS</div>
-				</div>
-
-				<!-- ROUNDED EDGE DECORATED -->
-				<div class="lcars-bar horizontal right-end decorated"></div>
+			<!-- BAR WITH TITLE -->
+			<div class="lcars-bar spacer"></div>
+			<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
+			<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-indigo-bg lcars-u-2-1">22</div>
+			
+			<div class="lcars-bar horizontal">
+				<div class="lcars-title right">LCARS M</div>
 			</div>
-		
+
+			<!-- ROUNDED EDGE DECORATED -->
+			<div class="lcars-bar horizontal right-end decorated"></div>
+		</div>
+
+		<div class="lcars-data lcars-row">
 			<!-- SIDE MENU ================================================= -->
 
-			<div id="left-menu" class="lcars-column start-space lcars-u-1">
+			<div class="left-menu lcars-column start-space lcars-u-1">
 
 				<!-- FILLER - Example menu actions -->
 				<div class="lcars-element button lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">101</div>
 				<div class="lcars-element button lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
 				<div class="lcars-element button lcars-bahama-blue-bg lcars-anakiwa-active-bg-s lcars-u-1-2 toptext"
-				  onclick="audioAmbiance();">33 </div>
+						onclick="audioAmbiance();">33 </div>
 				<div class="lcars-bar lcars-chestnut-rose-bg"></div>
 				
 			</div>
-		</div>
-		
-		<div class="lcars-region">
-		
-		<!-- FOOTER ==================================================== -->
-
-		<div id="footer" class="lcars-row ">
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
-			<!-- BAR -->
-
-			<div class="lcars-bar horizontal both-divider lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
-			<div class="lcars-bar spacer"></div>
-			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active">99</div>
-			<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
-			<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
-
-			<div class="lcars-bar horizontal both-divider bottom"></div>
-			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
-		</div>
 
 		<!-- MAIN CONTAINER -->
-		<div id="container">
+		<div id="container" class="hidden-scrollbars">
 			<!-- COLUMN LAYOUT -->
 			<div class="lcars-column lcars-u-5">
 
@@ -507,7 +486,25 @@
 				</p>
 
 			</div>
+		</div>
+	</div>
+	<!-- FOOTER ==================================================== -->
 
+	<div id="footer" class="lcars-row ">
+		<!-- ELBOW -->
+		<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
+		<!-- BAR -->
+
+		<div class="lcars-bar horizontal both-divider lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
+		<div class="lcars-bar spacer"></div>
+		<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
+				onclick="audioNegativeAcknowledge();">99</div>
+		<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
+		<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
+
+		<div class="lcars-bar horizontal both-divider bottom"></div>
+		<!-- ROUNDED EDGE -->
+		<div class="lcars-bar horizontal right-end left-divider bottom"></div>
 	</div>
 </div>
 

@@ -341,16 +341,9 @@ h6 {
   overflow: hidden;
   margin: 0.25rem;
 }
-.lcars-app-container #header {
-  width: unset;
-  z-index: 5;
-}
-.lcars-app-container #footer {
-  z-index: 5;
-}
 .lcars-app-container #container {
   padding-left: 9.5rem;
-  width: 100%;
+  flex-grow: 1;
   overflow: scroll;
 }
 .lcars-app-container .lcars-data {
@@ -390,7 +383,7 @@ h6 {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.lcars-row:last-child {
+.lcars-row > :last-child {
   margin-right: 0;
   mergin-left: auto;
 flex-grow
@@ -423,7 +416,7 @@ flex-grow
   justify-content: flex-end;
   align-items: center;
 }
-.lcars-column:last-child {
+.lcars-column > :last-child {
   margin-top: auto;
   margin-bottom: 0;
   flex-grow: 1;

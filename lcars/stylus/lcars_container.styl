@@ -16,31 +16,9 @@
   overflow hidden
   margin base-spacing
   
-  #header
-    width unset
-    z-index z-index-frame
-
-  #left-menu
-    //position relative
-    // padding double-spacing
-    // left double-spacing
-
-  #footer
-    //position relative
-    //background-color black
-    //bottom 0
-    //left double-spacing
-    //padding-bottom double-spacing
-    //width 'calc(100% - %s)' % (double-spacing * 2)
-    z-index z-index-frame
-
   #container
-    //margin-top base-spacing
-    //margin-left base-spacing
     padding-left elbow-column-spacing + base-width
-    //padding-top (base-height * 3/2)
-    //padding-bottom (base-height * 3/2)
-    width 100%
+    flex-grow 1
     overflow scroll
 
   .{prefix}data
