@@ -140,11 +140,11 @@
 			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
 					onclick="audioNegativeAcknowledge();">99</div>
 			<div class="lcars-element button horizontal bottom lcars-lilac-active-bg-m">72</div>
-			<div class="lcars-element button horizontal bottom lcars-u-1-2">32</div>
+			<div class="lcars-element button horizontal bottom lcars-u-2">32</div>
 
-			<div class="lcars-bar horizontal bottom"></div>
+			<div class="lcars-bar horizontal bottom fill"></div>
 			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+			<div class="lcars-bar horizontal bottom right-end"></div>
 
 		</div>
 
@@ -153,20 +153,20 @@
 
 		<div class="lower-divider lcars-row ">
 			<!-- ELBOW -->
-				<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+				<div class="lcars-elbow left-bottom lcars-periwinkle-active-bg-i"></div>
 
 				<!-- BAR WITH TITLE -->
 				<div class="lcars-bar spacer"></div>
 				<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
 				<div class="lcars-element button horizontal lcars-lilac-active-bg-m">25</div>
-				<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-u-1-2">22</div>
+				<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-u-2">22</div>
 				
-				<div class="lcars-bar horizontal">
+				<div class="lcars-bar horizontal fill">
 					<div class="lcars-title right">LCARS DS</div>
 				</div>
 
 				<!-- ROUNDED EDGE DECORATED -->
-				<div class="lcars-bar horizontal right-end decorated"></div>
+				<div class="lcars-bar horizontal fill right-end decorated"></div>
 		</div>
 
 		<!-- LOWER CONTAINER -->
@@ -432,36 +432,29 @@
 						</ul>
 					</p>
 
-					<h3>Example</h3>
+					<h3 id="elbow-example">Example</h3>
 
 					<p>
 						<div class="lcars-row">
-							<div class="lcars-elbow right-top lcars-tan-bg">
+							<div class="lcars-elbow right-top">
 								<a>right-top</a>
 							</div>
 							<div class="lcars-bar double-spacer"></div>
-							<div class="lcars-elbow left-top lcars-tan-bg">
+							<div class="lcars-elbow left-top">
 								<a>left-top</a>
 							</div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-blue-bell-bg bottom"></div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-lavender-purple-bg right-end bottom"></div>
-					</div>
-					</p>
-					<p>
+							<div class="lcars-bar horizontal bottom left-space right-space lcars-lilac-bg">bar + spaces</div>
+							<div class="lcars-bar horizontal bottom right-end lcars-lavender-purple-bg "></div>
+						</div>
 						<div class="lcars-row">
-							<div class="lcars-elbow right-bottom lcars-tan-bg">
+							<div class="lcars-elbow right-bottom">
 								<a>right-bottom</a>
 							</div>
 							<div class="lcars-bar double-spacer"></div>
-							<div class="lcars-elbow left-bottom lcars-tan-bg">
+							<div class="lcars-elbow left-bottom lcars-blue-bell-bg">
 								<a>left-bottom</a>
 							</div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
+							<div class="lcars-bar horizontal fill right-end decorated lcars-blue-bell-bg">bar fill, (end decorated)</div>
 						</div>
 					</p>
 
@@ -478,46 +471,51 @@
 							<li><span><pre class="lcars-rust-color">bottom</pre>: bottom bracket </span></li>
 						</ul>
 					</p>
-					<h3>Example</h3>
+					<h3 id="brackets-example">Example</h3>
 					<p>
 
-					<div class="lcars-row">
-						<div class="lcars-bracket left"></div>
-						<div class="lcars-column">
-							<div class="lcars-element"></div>
-							<div class="lcars-element"></div>
-						</div>
-						<div class="lcars-bracket right"></div>
-					</div>
-
-					<div class="lcars-row">
-						<div class="lcars-bracket left hollow"></div>
-						<div class="lcars-column">
-							<div class="lcars-element"></div>
-							<div class="lcars-element"></div>
-						</div>
-						<div class="lcars-bracket right hollow"></div>
-					</div>
-
-					<div class="lcars-column lcars-u-2">
-						<div class="lcars-bracket top "></div>
 						<div class="lcars-row">
-							<div class="lcars-element"></div>
-							<div class="lcars-element"></div>
+							<div class="lcars-bracket left"></div>
+							<div class="lcars-column">
+								<div class="lcars-element">side brackets</div>
+								<div class="lcars-element toptext">solid</div>
+							</div>
+							<div class="lcars-bracket right"></div>
 						</div>
-						<div class="lcars-bracket bottom "></div>
-					</div>
 
-					<div class="lcars-column lcars-u-2">
-						<div class="lcars-bracket top hollow"></div>
 						<div class="lcars-row">
-							<div class="lcars-element"></div>
-							<div class="lcars-element"></div>
+							<div class="lcars-bracket left hollow"></div>
+							<div class="lcars-column">
+								<div class="lcars-element">side brackets</div>
+								<div class="lcars-element toptext">hollow</div>
+							</div>
+							<div class="lcars-bracket right hollow"></div>
 						</div>
-						<div class="lcars-bracket bottom hollow"></div>
-					</div>
+
+						<div class="lcars-column lcars-u-4">
+							<div class="lcars-row">
+								<div class="lcars-column lcars-u-2">
+									<div class="lcars-bracket top ">top bracket</div>
+										<div class="lcars-row">
+											<div class="lcars-element">11</div>
+											<div class="lcars-element">12</div>
+										</div>
+									<div class="lcars-bracket bottom ">bottom bracket</div>
+								</div>
+
+								<div class="lcars-column lcars-u-2">
+									<div class="lcars-bracket top hollow">top bracket hollow</div>
+										<div class="lcars-row">
+											<div class="lcars-element">51</div>
+											<div class="lcars-element">52</div>
+										</div>
+									<div class="lcars-bracket bottom hollow">bottom bracket hollow</div>
+								</div>
+							</div>
+						</div>
 
 					</p>
+
 
 					<h2 id="audio_section">Audio</h2>
 

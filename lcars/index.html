@@ -33,14 +33,14 @@
 		<div class="header lcars-row">
 
 			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+			<div class="lcars-elbow left-bottom"></div>
 
 			<!-- BAR WITH TITLE -->
 			<div class="lcars-bar spacer"></div>
 			<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
 			<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-indigo-bg lcars-u-2-1">22</div>
 			
-			<div class="lcars-bar horizontal">
+			<div class="lcars-bar horizontal fill">
 				<div class="lcars-title right">LCARS M</div>
 			</div>
 
@@ -313,36 +313,29 @@
 						</ul>
 					</p>
 
-					<h3>Example</h3>
+					<h3 id="elbow-example">Example</h3>
 
 					<p>
 						<div class="lcars-row">
-							<div class="lcars-elbow right-top lcars-tan-bg">
+							<div class="lcars-elbow right-top">
 								<a>right-top</a>
 							</div>
 							<div class="lcars-bar double-spacer"></div>
-							<div class="lcars-elbow left-top lcars-tan-bg">
+							<div class="lcars-elbow left-top">
 								<a>left-top</a>
 							</div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-blue-bell-bg bottom"></div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-lavender-purple-bg right-end bottom"></div>
+							<div class="lcars-bar horizontal bottom left-space right-space lcars-lilac-bg">bar + spaces</div>
+							<div class="lcars-bar horizontal bottom right-end lcars-lavender-purple-bg "></div>
 						</div>
-					</p>
-					<p>
 						<div class="lcars-row">
-							<div class="lcars-elbow right-bottom lcars-tan-bg">
+							<div class="lcars-elbow right-bottom">
 								<a>right-bottom</a>
 							</div>
 							<div class="lcars-bar double-spacer"></div>
-							<div class="lcars-elbow left-bottom lcars-tan-bg">
+							<div class="lcars-elbow left-bottom lcars-blue-bell-bg">
 								<a>left-bottom</a>
 							</div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
-							<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
+							<div class="lcars-bar horizontal fill right-end decorated lcars-blue-bell-bg">bar fill, (end decorated)</div>
 						</div>
 					</p>
 
@@ -502,16 +495,14 @@
 		<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
 			<!-- BAR -->
 
-		<div class="lcars-bar horizontal lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
+		<div class="lcars-bar horizontal lcars-u-3 bottom lcars-chestnut-rose-bg"></div>
 		<div class="lcars-bar spacer"></div>
 		<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
 				onclick="audioNegativeAcknowledge();">99</div>
 		<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
-		<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
-
-		<div class="lcars-bar horizontal bottom"></div>
-			<!-- ROUNDED EDGE -->
-		<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+		<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1">32</div>
+		<!-- ROUNDED EDGE -->
+		<div class="lcars-bar horizontal bottom fill right-end"></div>
 	</div>
 
 	<audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->

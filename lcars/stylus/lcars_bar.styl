@@ -3,8 +3,8 @@
 .{prefix}bar
   position relative
   color black
-  height 100%
-  width 100%
+  height base-height
+  width base-width
   margin 0
   display inline-flex
   background-color default-color
@@ -16,21 +16,21 @@
     position absolute
     background black
 
-  &.spacer
+  &.spacer // spacers create a 'line' between elements and must be exact sized
     margin 0
     padding 0
     background-color transparent
-    width base-spacing
     min-width base-spacing
-    height base-spacing
+    max-width base-spacing
     min-height base-spacing
+    max-height base-spacing
 
   &.double-spacer
     background-color transparent
-    width double-spacing
     min-width double-spacing
-    height double-spacing
+    max-width double-spacing
     min-height double-spacing
+    max-height double-spacing
 
   &.left-space
     margin-left base-spacing
@@ -50,27 +50,25 @@
   
   &.left-end
     width bar-height
-    max-width bar-height
     min-width bar-height
     border-top-left-radius (bar-height/2)
     border-bottom-left-radius (bar-height/2)
     &.decorated
       &:after
-        right base-spacing
+        left (base-height / 2)
         width base-spacing
         height 100%
         background-color black
 
-  &.right-end
-    flex-grow 1
+  &.right-end 
+    flex-grow 0 // would typically be ":last-child", but don't grow, unless "fill" specified
     width bar-height
-    max-width bar-height
     min-width bar-height
     border-top-right-radius (bar-height/2)
     border-bottom-right-radius (bar-height/2)
     &.decorated
       &:after
-        left base-spacing
+        right (base-height / 2)
         width base-spacing
         height 100%
         background-color black
