@@ -4,32 +4,46 @@ bracket-border-size = base-height/4
 
 .{prefix}bracket
   background-color default-color
+  border-color default-color
+  border-style solid
+  display flex
+  font-weight bold
+  color black
+  justify-content flex-end
+  align-items flex-end
 
-  &.left
-    width (base-height/2)
+  &.left // not designed for text
+    width (base-height / 2)
     border-top-left-radius @width
     border-bottom-left-radius @width
     border-width bracket-border-size 0 bracket-border-size base-spacing
 
-  &.right
-    width (base-height/2)
+  &.right // not designed for text
+    width (base-height / 2)
     border-top-right-radius @width
     border-bottom-right-radius @width
     border-width bracket-border-size base-spacing bracket-border-size 0
+    flex-grow 0
 
   &.top
-    height (base-height/2)
+    height (base-height / 2)
+    padding-left @height
+    padding-right @height
     border-top-left-radius @height
     border-top-right-radius @height
     border-width base-spacing bracket-border-size 0 bracket-border-size 
-
+  
   &.bottom
-    height (base-height/2)
+    height (base-height / 2)
+    padding-left @height
+    padding-right @height
     border-bottom-left-radius @height
     border-bottom-right-radius @height
     border-width 0 bracket-border-size base-spacing bracket-border-size
+    flex-grow 0
 
   &.hollow
     background-color black
+    color inherit
     border-style solid
     border-color default-color
