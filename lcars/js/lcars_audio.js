@@ -6,6 +6,7 @@
 // Assumes you have this at the bottom of your document:
 //   <audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
 
+// audio tracs available at https://www.trekcore.com/audio/
 
 
 //=\\ Standard Wire-up
@@ -17,10 +18,7 @@ var audioExtensions = {};
 var audioPath = "./audio/";
 var audioType;
 
-var audAck;
-var audAlert;
-var audInput;
-
+// determine which flavor of audio this browser can support
 auDummy = document.getElementById("audUmmy").appendChild(document.createElement("audio"));
 for (var key in audioExtensions) {
 	if (auDummy.canPlayType("audio/"+audioExtensions[key]) != '') {
@@ -32,31 +30,58 @@ for (var key in audioExtensions) {
 		break;
 	}
 }
-audAck   = new Audio("audio/input_ack." + audioType);
-audNak   = new Audio("audio/input_neg_ack." + audioType);
-audAlert = new Audio("audio/output_bel." + audioType);
-audReady = new Audio("audio/output_soh." + audioType);
 
+const audCache = {};
+// var audAck;
+// var audAlert;
+// var audInput;
+function addSound(name, res) {
+	audCache[name] = new Audio(res + '.' + audioType);
+	audCache[name].controls = false;
+	window.console && console.log("defining sound " + name + " [" + res + '.' + audioType + ']');
+}
+
+addSound("audAck", "audio/input_ack");
+addSound("audNak", "audio/input_nak");
+addSound("audAlert", "audio/output_bel");
+addSound("audReady", "audio/output_soh"); // 4, 8, 9, 13, 15
+addSound("audAmb", "audio/tng_bridge_1");
+audCache.audAmb.loop = true;
+audCache.audAmb.controls = true;
 
 function audioAcknowledge() {
-	audAck.play();
+	audCache.audAck.play();
 }
 
 function audioNegativeAcknowledge() {
-	audNak.play();
+	audCache.audNak.play();
 }
 
 function audioAlert() {
-        window.console && console.log(audAlert.readyState)
+    // window.console && console.log(audAlert.readyState)
+    window.console && console.log(audCache[audAlert].readyState)
 		//audAlert.load();
-        audAlert.play();
+		audCache.audAlert.play();
+    // audAlert.play();
 		//TODO:bonus: have a fallback for no supported file types (or MUTE active):  floating div pops up and flashes, then disappears. der blinken lights
 }
 
 function audioReady() {
-	audReady.play();
+	audCache.audReady.play();
 }
 
+function audioAmbiance() {
+	switch (audCache.audAmb.readyState) {
+		case 3, 4:
+			if (audCache.audAmb.paused)
+				audCache.audAmb.play();
+			else
+				audCache.audAmb.pause();
+			break;
+		default:
+	}
+	// audioAmb.play();
+}
 
 var button_list = document.querySelectorAll("#container div.lcars-element.button");
 for (var button of button_list) {
@@ -67,7 +92,7 @@ for (var button of button_list) {
 
 //All "booted" up. Many browsers won't play this next sound because the user hasn't "blessed" the action with a UI click yet.
 document.addEventListener("DOMContentLoaded", function(event) { 
-	console.log("Attempting to play " + audReady);
+	console.log("Attempting to play " + audCache.audReady);
 	audioReady();
 });
 
