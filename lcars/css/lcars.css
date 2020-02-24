@@ -1,6 +1,9 @@
 div .lcars-gray-bg {
   background-color: rgba(34,51,85,0.467);
 }
+div .lcars-red-alert-bg {
+  background-color: #c11;
+}
 div .lcars-white-bg {
   background-color: #fff;
 }
@@ -99,6 +102,9 @@ div .lcars-tamarillo-bg {
 }
 div .lcars-gray-border {
   border-color: rgba(34,51,85,0.467);
+}
+div .lcars-red-alert-border {
+  border-color: #c11;
 }
 div .lcars-white-border {
   border-color: #fff;
@@ -199,6 +205,9 @@ div .lcars-tamarillo-border {
 div .lcars-gray-color {
   color: rgba(34,51,85,0.467);
 }
+div .lcars-red-alert-color {
+  color: #c11;
+}
 div .lcars-white-color {
   color: #fff;
 }
@@ -298,7 +307,7 @@ div .lcars-tamarillo-color {
 html,
 body {
   font-family: "arial", monospace;
-  color: #fff;
+  color: #f90;
 }
 h1 {
   font-size: 270%;
@@ -332,17 +341,30 @@ h6 {
   bottom: 0;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   overflow: hidden;
-  margin: 0.25rem;
 }
-.lcars-app-container #container {
+.lcars-app-container .lcars-container {
+  overflow: hidden;
+}
+.lcars-app-container .lcars-data {
   padding-left: 9.5rem;
   flex-grow: 1;
   overflow: scroll;
 }
-.lcars-app-container .lcars-data {
-  overflow: hidden;
+.lcars-app-container.framed {
+  margin: 0.5rem;
+}
+.lcars-app-container.framed-left {
+  margin-left: 0.5rem;
+}
+.lcars-app-container.framed-right {
+  margin-right: 0.5rem;
+}
+.lcars-app-container.framed-top {
+  margin-top: 0.5rem;
+}
+.lcars-app-container.framed-bottom {
+  margin-bottom: 0.5rem;
 }
 .hidden-scrollbars {
   scrollbar-width: none;
@@ -380,8 +402,8 @@ h6 {
 }
 .lcars-row > :last-child {
   margin-right: 0;
-  mergin-left: auto;
-flex-grow
+  margin-left: auto;
+  flex-grow: 1;
 }
 .lcars-row > * {
   margin-right: 0.25rem;
@@ -560,6 +582,7 @@ flex-grow
   background-color: #000;
 }
 .lcars-bar.right-end {
+  flex-grow: 1;
   width: 1.5rem;
   max-width: 1.5rem;
   min-width: 1.5rem;
@@ -1723,6 +1746,9 @@ a.lcars-text-box.blink {
 div .lcars-gray-active-bg-s {
   animation: active-gray 11s steps(1) infinite;
 }
+div .lcars-red-alert-active-bg-s {
+  animation: active-red-alert 11s steps(1) infinite;
+}
 div .lcars-white-active-bg-s {
   animation: active-white 11s steps(1) infinite;
 }
@@ -1821,6 +1847,9 @@ div .lcars-tamarillo-active-bg-s {
 }
 div .lcars-gray-active-bg-m {
   animation: active-gray 33s steps(1) infinite;
+}
+div .lcars-red-alert-active-bg-m {
+  animation: active-red-alert 33s steps(1) infinite;
 }
 div .lcars-white-active-bg-m {
   animation: active-white 33s steps(1) infinite;
@@ -1921,6 +1950,9 @@ div .lcars-tamarillo-active-bg-m {
 div .lcars-gray-active-bg-l {
   animation: active-gray 165s steps(1) infinite;
 }
+div .lcars-red-alert-active-bg-l {
+  animation: active-red-alert 165s steps(1) infinite;
+}
 div .lcars-white-active-bg-l {
   animation: active-white 165s steps(1) infinite;
 }
@@ -2019,6 +2051,9 @@ div .lcars-tamarillo-active-bg-l {
 }
 div .lcars-gray-active-bg-i {
   animation: active-gray 209s steps(1) infinite;
+}
+div .lcars-red-alert-active-bg-i {
+  animation: active-red-alert 209s steps(1) infinite;
 }
 div .lcars-white-active-bg-i {
   animation: active-white 209s steps(1) infinite;
@@ -2134,6 +2169,26 @@ div .lcars-tamarillo-active-bg-i {
 @keyframes active-gray {
   65% {
     background-color: rgba(34,51,85,0.467);
+  }
+}
+@-moz-keyframes active-red-alert {
+  65% {
+    background-color: #c11;
+  }
+}
+@-webkit-keyframes active-red-alert {
+  65% {
+    background-color: #c11;
+  }
+}
+@-o-keyframes active-red-alert {
+  65% {
+    background-color: #c11;
+  }
+}
+@keyframes active-red-alert {
+  65% {
+    background-color: #c11;
   }
 }
 @-moz-keyframes active-white {

@@ -26,43 +26,162 @@
   </style>
 </head>
 <body>
-	<div class="lcars-app-container framed">
+	<div class="lcars-app-container framed-left framed-right">
 
-		<!-- HEADER ==================================================== -->
-
-		<div class="header lcars-row">
-
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
-
-			<!-- BAR WITH TITLE -->
-			<div class="lcars-bar spacer"></div>
-			<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
-			<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-indigo-bg lcars-u-2-1">22</div>
-			
-			<div class="lcars-bar horizontal">
-				<div class="lcars-title right">LCARS M</div>
-			</div>
-
-			<!-- ROUNDED EDGE DECORATED -->
-			<div class="lcars-bar horizontal right-end decorated"></div>
-		</div>
-
-		<div class="lcars-container lcars-row  start-space">
+	  <!-- UPPER CONTAINER -->
+		<div class="lcars-container lcars-row" style="flex-basis: unset; min-height:11rem;">
 			<!-- SIDE MENU ================================================= -->
 
 			<div class="left-menu lcars-column start-space lcars-u-1">
 
 				<!-- FILLER - Example menu actions -->
-				<div class="lcars-element button lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">101</div>
-				<div class="lcars-element button lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
-				<div class="lcars-element button lcars-bahama-blue-bg lcars-anakiwa-active-bg-s lcars-u-1-2 toptext"
-						onclick="audioAmbiance();">33 </div>
 				<div class="lcars-bar lcars-chestnut-rose-bg"></div>
-				
+				<div class="lcars-bar spacer"></div>
+				<div class="lcars-element button lcars-u-1-1 lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">101</div>
+				<div class="lcars-element button lcars-u-1-1 lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
+				<div class="lcars-element button lcars-chestnut-rose-bg lcars-u-1-1 toptext"
+						onclick="audioAmbiance();">33 </div>
 			</div>
 
-			<!-- MAIN CONTAINER -->
+			<!-- start data -->
+
+			<div class="lcars-data hidden-scrollbars" style="padding-left:2rem;">
+				<!-- COLUMN LAYOUT -->
+				<div class="lcars-column lcars-u-5">
+					<p>
+					<div class="lcars-row">
+						<div class="lcars-column">
+							<div class="lcars-element lcars-white-bg">white</div>
+							<div class="lcars-element lcars-gray-bg">gray</div>
+							<div class="lcars-element lcars-red-alert-bg">red-alert</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
+							<div class="lcars-element lcars-golden-tanoi-bg">golden-tanoi</div>
+							<div class="lcars-element lcars-neon-carrot-bg">neon-carrot</div>							
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-eggplant-bg">eggplant</div>
+							<div class="lcars-element lcars-lilac-bg">lilac</div>
+							<div class="lcars-element lcars-anakiwa-bg">anakiwa</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-mariner-bg">mariner</div>
+							<div class="lcars-element lcars-bahama-blue-bg">bahama-blue</div>
+							<div class="lcars-element lcars-blue-bell-bg">blue-bell</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-melrose-bg">melrose</div>
+							<div class="lcars-element lcars-hopbush-bg">hopbush</div>
+							<div class="lcars-element lcars-chestnut-rose-bg">chestnut-rose</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-orange-peel-bg">orange-peel</div>
+							<div class="lcars-element lcars-atomic-tangerine-bg">atomic-tangerine</div>
+							<div class="lcars-element lcars-danub-bg">danub</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-indigo-bg">indigo</div>
+							<div class="lcars-element lcars-lavender-purple-bg">lavender-purple</div>
+							<div class="lcars-element lcars-cosmic-bg">cosmic</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-red-damask-bg">red-damask</div>
+							<div class="lcars-element lcars-medium-carmine-bg">medium-carmine</div>
+							<div class="lcars-element lcars-bourbon-bg">bourbon</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-sandy-brown-bg">sandy-brown</div>
+							<div class="lcars-element lcars-periwinkle-bg">periwinkle</div>
+							<div class="lcars-element lcars-dodger-blue-bg">dodger-blue</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-dodger-blue-alt-bg">dodger-blue-alt</div>
+							<div class="lcars-element lcars-blue-bg">blue</div>
+							<div class="lcars-element lcars-navy-blue-bg">navy-blue</div>
+						</div>
+
+						<div class="lcars-column">
+							<div class="lcars-element lcars-husk-bg">husk</div>
+							<div class="lcars-element lcars-tamarillo-bg">tamarillo</div>
+							<div class="lcars-element lcars-rust-bg">rust</div>
+						</div>
+
+					</div>
+					</p>
+
+					
+				</div>
+			</div>
+
+			<!--end data -->
+
+		</div>
+		
+		<!-- TOP DIVIDER ==================================================== -->
+
+		<div class="top-divider lcars-row">
+
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
+			<!-- BAR -->
+
+			<div class="lcars-bar spacer"></div>
+			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
+					onclick="audioNegativeAcknowledge();">99</div>
+			<div class="lcars-element button horizontal bottom lcars-lilac-active-bg-m">72</div>
+			<div class="lcars-element button horizontal bottom lcars-u-1-2">32</div>
+
+			<div class="lcars-bar horizontal bottom"></div>
+			<!-- ROUNDED EDGE -->
+			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+
+		</div>
+
+		<div class="lcars-bar spacer"></div>
+		<!-- LOWER DIVIDER ==================================================== -->
+
+		<div class="lower-divider lcars-row ">
+			<!-- ELBOW -->
+				<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+
+				<!-- BAR WITH TITLE -->
+				<div class="lcars-bar spacer"></div>
+				<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
+				<div class="lcars-element button horizontal lcars-lilac-active-bg-m">25</div>
+				<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-u-1-2">22</div>
+				
+				<div class="lcars-bar horizontal">
+					<div class="lcars-title right">LCARS DS</div>
+				</div>
+
+				<!-- ROUNDED EDGE DECORATED -->
+				<div class="lcars-bar horizontal right-end decorated"></div>
+		</div>
+
+		<!-- LOWER CONTAINER -->
+	  <div class="lcars-container lcars-row">
+
+			<!-- LEFT MENU ================================================= -->
+
+			<div class="left-menu lcars-column lcars-u-1">
+
+				<!-- FILLER - Example menu actions -->
+				<div class="lcars-element button lcars-u-1-1 lcars-periwinkle-active-bg-i">9</div>		
+				<div class="lcars-element button lcars-u-1-1 lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">1</div>
+				<div class="lcars-bar lcars-u-1-1"></div>
+			</div>
+
+			<!-- start data -->
 			<div class="lcars-data hidden-scrollbars">
 				<!-- COLUMN LAYOUT -->
 				<div class="lcars-column lcars-u-5">
@@ -486,28 +605,10 @@
 					</p>
 
 				</div>
-			</div>
-
-		<!-- FOOTER ==================================================== -->
-
-		
+			<!-- end data -->
 		</div>
-		<div id="footer" class="lcars-row ">
-			<!-- ELBOW -->
-		<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
-			<!-- BAR -->
-
-		<div class="lcars-bar horizontal lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
-		<div class="lcars-bar spacer"></div>
-		<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
-				onclick="audioNegativeAcknowledge();">99</div>
-		<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
-		<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
-
-		<div class="lcars-bar horizontal bottom"></div>
-			<!-- ROUNDED EDGE -->
-		<div class="lcars-bar horizontal right-end left-divider bottom"></div>
 	</div>
+
 
 	<audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
 	<script src="js/lcars_audio.js"></script>

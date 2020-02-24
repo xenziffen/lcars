@@ -1,28 +1,38 @@
 // LCARS Container
 
 .{prefix}app-container
-  // background black
-  // margin base-spacing
   position absolute
-  left 0 // double-spacing
-  right 0 // double-spacing
+  left 0
+  right 0
   top 0
   bottom 0
 
   display flex
   flex-direction column
-  align-items stretch
-
   overflow hidden
-  margin base-spacing
-  
-  #container
-    padding-left elbow-column-spacing + base-width
+
+  .{prefix}container // a region that holds content, between dividers
+    overflow: hidden
+
+  .{prefix}data // a region in the app-container that has information
+    padding-left elbow-column-spacing + base-width // healthy left margin
     flex-grow 1
     overflow scroll
 
-  .{prefix}data
-    overflow: hidden
+  &.framed
+    margin double-spacing
+
+  &.framed-left
+    margin-left double-spacing
+  
+  &.framed-right
+    margin-right double-spacing
+  
+  &.framed-top
+    margin-top double-spacing
+  
+  &.framed-bottom
+    margin-bottom double-spacing
 
 .hidden-scrollbars
   scrollbar-width none
