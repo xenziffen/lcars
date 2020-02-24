@@ -330,46 +330,39 @@ h6 {
   font-weight: bold;
 }
 .lcars-app-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
-  width: calc(100% - 1rem);
-  height: calc(100% - 1rem);
+  flex-direction: column;
+  align-items: stretch;
   overflow: hidden;
-  margin: 0.5rem;
-}
-.lcars-app-container #left-menu {
-  position: fixed;
-  padding-top: 4.5rem;
-  height: 100%;
-  left: 0.5rem;
+  margin: 0.25rem;
 }
 .lcars-app-container #header {
-  position: fixed;
-  background-color: #000;
-  width: calc(100% - 1rem);
-  top: 0;
-  left: 0.5rem;
-  padding-top: 0.5rem;
-  margin-bottom: 0.25rem;
-  z-index: 1;
+  width: unset;
+  z-index: 5;
 }
 .lcars-app-container #footer {
-  position: fixed;
-  background-color: #000;
-  bottom: 0;
-  left: 0.5rem;
-  padding-bottom: 0.5rem;
-  width: calc(100% - 1rem);
-  z-index: 1;
+  z-index: 5;
 }
 .lcars-app-container #container {
-  margin-top: 0.25rem;
-  margin-left: 0.25rem;
   padding-left: 9.5rem;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
   width: 100%;
-  height: 100%;
-  overflow: auto;
+  overflow: scroll;
+}
+.lcars-app-container .lcars-data {
+  overflow: hidden;
+}
+.hidden-scrollbars {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hidden-scrollbars::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
 .lcars-row {
   display: inline-flex;
@@ -397,8 +390,10 @@ h6 {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.lcars-row :last-child {
+.lcars-row:last-child {
   margin-right: 0;
+  mergin-left: auto;
+flex-grow
 }
 .lcars-row > * {
   margin-right: 0.25rem;
@@ -428,8 +423,10 @@ h6 {
   justify-content: flex-end;
   align-items: center;
 }
-.lcars-column :last-child {
+.lcars-column:last-child {
+  margin-top: auto;
   margin-bottom: 0;
+  flex-grow: 1;
 }
 .lcars-column > * {
   margin-bottom: 0.25rem;
@@ -451,6 +448,7 @@ h6 {
   min-height: 4.5rem;
   background: #fc6;
   margin: 0;
+  z-index: 5;
 }
 .lcars-elbow a {
   display: inline-block;
@@ -520,6 +518,7 @@ h6 {
   margin: 0;
   display: inline-flex;
   background-color: #fc6;
+  z-index: 5;
 }
 .lcars-bar:after {
   content: '';

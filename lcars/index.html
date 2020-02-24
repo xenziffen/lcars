@@ -48,40 +48,22 @@
 			<div class="lcars-bar horizontal right-end decorated"></div>
 		</div>
 
-		<!-- SIDE MENU ================================================= -->
+		<div class="lcars-row lcars-data">
+			<!-- SIDE MENU ================================================= -->
 
-		<div id="left-menu" class="lcars-column start-space lcars-u-1">
+			<div id="left-menu" class="lcars-column start-space lcars-u-1">
 
-			<!-- FILLER - Example menu actions -->
-			<div class="lcars-element button lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">101</div>
-			<div class="lcars-element button lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
-			<div class="lcars-element button lcars-bahama-blue-bg lcars-anakiwa-active-bg-s lcars-u-1-2 toptext"
-				  onclick="audioAmbiance();">33 </div>
-			<div class="lcars-bar lcars-chestnut-rose-bg"></div>
-			
-		</div>
-
-		<!-- FOOTER ==================================================== -->
-
-		<div id="footer" class="lcars-row ">
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
-			<!-- BAR -->
-
-			<div class="lcars-bar horizontal both-divider lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
-			<div class="lcars-bar spacer"></div>
-			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
-				  onclick="audioNegativeAcknowledge();">99</div>
-			<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
-			<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
-
-			<div class="lcars-bar horizontal both-divider bottom"></div>
-			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
-		</div>
+				<!-- FILLER - Example menu actions -->
+				<div class="lcars-element button lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">101</div>
+				<div class="lcars-element button lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
+				<div class="lcars-element button lcars-bahama-blue-bg lcars-anakiwa-active-bg-s lcars-u-1-2 toptext"
+						onclick="audioAmbiance();">33 </div>
+				<div class="lcars-bar lcars-chestnut-rose-bg"></div>
+				
+			</div>
 
 		<!-- MAIN CONTAINER -->
-		<div id="container">
+		<div id="container" class="hidden-scrollbars">
 			<!-- COLUMN LAYOUT -->
 			<div class="lcars-column lcars-u-5">
 
@@ -504,8 +486,27 @@
 				</p>
 
 			</div>
-
+		</div>
 	</div>
+	<!-- FOOTER ==================================================== -->
+
+	<div id="footer" class="lcars-row ">
+		<!-- ELBOW -->
+		<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
+		<!-- BAR -->
+
+		<div class="lcars-bar horizontal both-divider lcars-u-3-1 bottom lcars-chestnut-rose-bg"></div>
+		<div class="lcars-bar spacer"></div>
+		<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
+				onclick="audioNegativeAcknowledge();">99</div>
+		<div class="lcars-element button horizontal bottom lcars-bourbon-bg lcars-lilac-active-bg-m">72</div>
+		<div class="lcars-element button horizontal bottom lcars-neon-carrot-bg lcars-u-1-1">32</div>
+
+		<div class="lcars-bar horizontal both-divider bottom"></div>
+		<!-- ROUNDED EDGE -->
+		<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+	</div>
+	hidden-scrollbars
 </div>
 
 <audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
