@@ -1,58 +1,130 @@
 // LCARS Elbow
 
+/*
+  Normally it's fine to have the elbow butt up against the divs next to it.
+  But for XHDPI screens, like mobile phones, the anti-aliasing nature of "half-pixels"
+  means we can get faint pixels on the edge, making a faint line between two divs.
+
+  Since having lines appear is undesirable, a calculated negative margin of 1px
+  draws neighboring divs toward the elbow. Then spacers are encouraged away
+  with extra padding. They aren't visible elements, so padding works.
+
+  .left-space and .right-space of solid bars need margin added back in since 
+  padding does affect the visible element. We add a calculated 1px extra size.
+
+  This doesn't help for elements in different column/rows. For those cases
+  a spacer should be used and provided a hint there is an elbow nearby
+*/
+extra-margin-on-bar-with-space = "calc(%s + %s)" % (elbow-overlap-margin base-spacing) !important
+
 .{prefix}elbow
   position relative
+  color black
+  font-weight bold
   width base-width + elbow-column-spacing
   min-width @width
   height (base-height * 1.5)
   min-height @height
   background default-color
-  margin 0
+  margin 0 // doesn't have bar margins, like other bar elements
   z-index z-index-frame
-
-  & a
+  
+  // you wouldn't normally put text on an elbow, but for the example, and if you wanted to
+  // you have to use a span, because the padding would mess with the psuedo-classes
+  // maybe we should make a div class called lcars-elbow-text? (like lcars-title on the bars)
+  & span 
     display inline-block
     position absolute
-    color black
     bottom 0
     padding base-spacing
-  &:after
+  &:after // psuedo-class to cut the inside curve in elbow
     content ''
     display block
     position absolute
     width elbow-column-spacing
-    height @height - (base-height/2)
+    height @height - (base-height / 2)
     background black
+  
   &.left-bottom
     border-top-left-radius elbow-radius-size
-    & a
-      right elbow-column-spacing + base-spacing
+    margin-bottom -(elbow-overlap-margin)
+    margin-right -(elbow-overlap-margin)
     &:after
       right 0
-      top (base-height/2)
-      border-top-left-radius (elbow-radius-size/2)
+      top (base-height / 2)
+      border-top-left-radius (elbow-radius-size / 2)
+    & + .spacer, + .double-spacer // fix neighboring divs for the negative margin
+      padding-left elbow-overlap-margin
+      padding-top elbow-overlap-margin
+    & + .left-space
+      margin-left extra-margin-on-bar-with-space
+    & + .start-space
+      margin-top extra-margin-on-bar-with-space
+    & span
+      right elbow-column-spacing + base-spacing
+
   &.left-top
     border-bottom-left-radius elbow-radius-size
-    & a
-      top 0
-      right elbow-column-spacing + base-spacing
+    margin-top -(elbow-overlap-margin)
+    margin-right -(elbow-overlap-margin)
     &:after
       right 0
-      bottom (base-height/2)
+      bottom (base-height / 2)
       border-bottom-left-radius elbow-radius-size
+    & + .spacer, + .double-spacer
+      padding-left elbow-overlap-margin
+      padding-bottom elbow-overlap-margin
+    & + .left-space
+      margin-left extra-margin-on-bar-with-space
+    & + .end-space
+      margin-bottom extra-margin-on-bar-with-space
+    & span
+      top 0
+      right elbow-column-spacing + base-spacing
+
   &.right-bottom
     border-top-right-radius elbow-radius-size
+    margin-bottom -(elbow-overlap-margin)
+    margin-left -(elbow-overlap-margin)
     &:after
-      top (base-height/2)
-      border-top-right-radius (elbow-radius-size/2)
-    & a
+      top (base-height / 2)
+      border-top-right-radius (elbow-radius-size / 2)
+    & + .spacer, + .double-spacer
+      padding-top elbow-overlap-margin
+      padding-right elbow-overlap-margin
+    & + .right-space
+      margin-right extra-margin-on-bar-with-space
+    & + .start-space
+      margin-top extra-margin-on-bar-with-space
+    & span
       left elbow-column-spacing + base-spacing
+
   &.right-top
     border-bottom-right-radius elbow-radius-size
-    & a
-      display inline-block
+    margin-top -(elbow-overlap-margin)
+    margin-left -(elbow-overlap-margin)
+    &:after
+      bottom (base-height / 2)
+      border-bottom-right-radius (elbow-radius-size / 2)
+    & + .spacer, + .double-spacer
+      padding-bottom elbow-overlap-margin
+      padding-right elbow-overlap-margin
+    & + .right-space
+      margin-right extra-margin-on-bar-with-space
+    & + .end-space
+      margin-bottom extra-margin-on-bar-with-space
+    & span
       top 0
       left elbow-column-spacing + base-spacing
-    &:after
-      bottom (base-height/2)
-      border-bottom-right-radius (elbow-radius-size/2)
+
+.{prefix}bar.spacer.elbow-hint
+  min-width extra-margin-on-bar-with-space
+  max-width @min-width
+  min-height @min-width
+  max-height @min-width
+
+.{prefix}bar.double-spacer.elbow-hint
+  min-width extra-margin-on-bar-with-space
+  max-width @min-width
+  min-height @min-width
+  max-height @min-width
