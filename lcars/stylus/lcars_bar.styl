@@ -10,12 +10,6 @@
   background-color default-color
   z-index z-index-frame
 
-  &:after
-    content ''
-    display block
-    position absolute
-    background black
-
   &.spacer // spacers create a 'line' between elements and must be exact sized
     margin 0
     padding 0
@@ -31,11 +25,6 @@
     max-width @min-width
     min-height @min-width
     max-height @min-width
-    // &.elbow-hint
-    //   min-width "calc(%s + %s)" % (elbow-overlap-margin double-spacing)
-    //   max-width @min-width
-    //   min-height @min-width
-    //   max-height @min-width
 
   &.horizontal
     height bar-height
@@ -64,8 +53,12 @@
     min-width bar-height
     border-top-left-radius (bar-height/2)
     border-bottom-left-radius (bar-height/2)
+
     &.decorated
       &:after
+        content ''
+        display block
+        position absolute
         left (base-height / 2)
         width base-spacing
         height 100%
@@ -79,6 +72,9 @@
     border-bottom-right-radius (bar-height/2)
     &.decorated
       &:after
+        content ''
+        display block
+        position absolute
         right (base-height / 2)
         width base-spacing
         height 100%
@@ -91,17 +87,17 @@
     align-self: flex-end
 
   .{prefix}title
+    display flex
+    justify-content center
+    align-items center
     scaled-base-spacing = (base-spacing*2/3)
     color white
     background-color black
     text-transform uppercase
-    margin 0
-    margin-left 5 * scaled-base-spacing
+    margin-left 5 * scaled-base-spacing // a bit of bar before black background
     padding-left scaled-base-spacing
     padding-right scaled-base-spacing
-    padding-bottom scaled-base-spacing
     font-size 150%
-    height 100%
 
     &.right
       margin-left auto
