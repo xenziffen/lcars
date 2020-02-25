@@ -6,7 +6,7 @@ body {
 div .lcars-gray-bg {
   background-color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-bg {
+div .lcars-red-bg {
   background-color: #c11;
 }
 div .lcars-white-bg {
@@ -108,7 +108,7 @@ div .lcars-tamarillo-bg {
 div .lcars-gray-border {
   border-color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-border {
+div .lcars-red-border {
   border-color: #c11;
 }
 div .lcars-white-border {
@@ -210,7 +210,7 @@ div .lcars-tamarillo-border {
 div .lcars-gray-color {
   color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-color {
+div .lcars-red-color {
   color: #c11;
 }
 div .lcars-white-color {
@@ -352,7 +352,7 @@ h6 {
   overflow: hidden;
 }
 .lcars-app-container .lcars-data {
-  padding-left: 9.5rem;
+  padding-left: 2rem;
   flex-grow: 1;
   overflow: scroll;
 }

@@ -1,7 +1,7 @@
 div .lcars-gray-bg {
   background-color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-bg {
+div .lcars-red-bg {
   background-color: #c11;
 }
 div .lcars-white-bg {
@@ -103,7 +103,7 @@ div .lcars-tamarillo-bg {
 div .lcars-gray-border {
   border-color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-border {
+div .lcars-red-border {
   border-color: #c11;
 }
 div .lcars-white-border {
@@ -205,7 +205,7 @@ div .lcars-tamarillo-border {
 div .lcars-gray-color {
   color: rgba(34,51,85,0.467);
 }
-div .lcars-red-alert-color {
+div .lcars-red-color {
   color: #c11;
 }
 div .lcars-white-color {
@@ -347,7 +347,7 @@ h6 {
   overflow: hidden;
 }
 .lcars-app-container .lcars-data {
-  padding-left: 9.5rem;
+  padding-left: 2rem;
   flex-grow: 1;
   overflow: scroll;
 }
@@ -1758,8 +1758,8 @@ a.lcars-text-box.blink {
 div .lcars-gray-active-bg-s {
   animation: active-gray 11s steps(1) infinite;
 }
-div .lcars-red-alert-active-bg-s {
-  animation: active-red-alert 11s steps(1) infinite;
+div .lcars-red-active-bg-s {
+  animation: active-red 11s steps(1) infinite;
 }
 div .lcars-white-active-bg-s {
   animation: active-white 11s steps(1) infinite;
@@ -1860,8 +1860,8 @@ div .lcars-tamarillo-active-bg-s {
 div .lcars-gray-active-bg-m {
   animation: active-gray 33s steps(1) infinite;
 }
-div .lcars-red-alert-active-bg-m {
-  animation: active-red-alert 33s steps(1) infinite;
+div .lcars-red-active-bg-m {
+  animation: active-red 33s steps(1) infinite;
 }
 div .lcars-white-active-bg-m {
   animation: active-white 33s steps(1) infinite;
@@ -1962,8 +1962,8 @@ div .lcars-tamarillo-active-bg-m {
 div .lcars-gray-active-bg-l {
   animation: active-gray 165s steps(1) infinite;
 }
-div .lcars-red-alert-active-bg-l {
-  animation: active-red-alert 165s steps(1) infinite;
+div .lcars-red-active-bg-l {
+  animation: active-red 165s steps(1) infinite;
 }
 div .lcars-white-active-bg-l {
   animation: active-white 165s steps(1) infinite;
@@ -2064,8 +2064,8 @@ div .lcars-tamarillo-active-bg-l {
 div .lcars-gray-active-bg-i {
   animation: active-gray 209s steps(1) infinite;
 }
-div .lcars-red-alert-active-bg-i {
-  animation: active-red-alert 209s steps(1) infinite;
+div .lcars-red-active-bg-i {
+  animation: active-red 209s steps(1) infinite;
 }
 div .lcars-white-active-bg-i {
   animation: active-white 209s steps(1) infinite;
@@ -2183,22 +2183,22 @@ div .lcars-tamarillo-active-bg-i {
     background-color: rgba(34,51,85,0.467);
   }
 }
-@-moz-keyframes active-red-alert {
+@-moz-keyframes active-red {
   65% {
     background-color: #c11;
   }
 }
-@-webkit-keyframes active-red-alert {
+@-webkit-keyframes active-red {
   65% {
     background-color: #c11;
   }
 }
-@-o-keyframes active-red-alert {
+@-o-keyframes active-red {
   65% {
     background-color: #c11;
   }
 }
-@keyframes active-red-alert {
+@keyframes active-red {
   65% {
     background-color: #c11;
   }
