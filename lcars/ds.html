@@ -37,9 +37,16 @@
 				<!-- FILLER - Example menu actions -->
 				<div class="lcars-bar lcars-chestnut-rose-bg"></div>
 				<div class="lcars-bar spacer"></div>
-				<div class="lcars-element button lcars-u-1-1 lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l"
-				onclick="parent.location='index.html'">101</div>
-				<div class="lcars-element button lcars-u-1-1 lcars-blue-bell-bg lcars-periwinkle-active-bg-i">201</div>
+				<div class="lcars-element button
+				  lcars-u-1-1
+					lcars-dodger-blue-bg 
+					lcars-active-bg
+					active-pale-canary
+					short
+					tardy
+					"
+						onclick="parent.location='index.html'">101</div>
+				<div class="lcars-element button lcars-u-1-1 lcars-blue-bell-bg lcars-active-bg active-periwinkle infrequent">201</div>
 				<div class="lcars-element button lcars-chestnut-rose-bg lcars-u-1-1 toptext"
 						onclick="audioAmbiance();">33 </div>
 			</div>
@@ -134,17 +141,19 @@
 
 			<!-- ELBOW -->
 			<div class="lcars-elbow left-top lcars-chestnut-rose-bg"></div>
-			<!-- BAR -->
 
+			<!-- BAR -->
 			<div class="lcars-bar spacer"></div>
-			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active"
+			<div class="lcars-element button horizontal bottom lcars-tamarillo-bg lcars-active-bg"
 					onclick="audioNegativeAcknowledge();">99</div>
-			<div class="lcars-element button horizontal bottom lcars-lilac-active-bg-m">72</div>
+			<div class="lcars-element button horizontal bottom lcars-active-bg active-color-lilac medium">72</div>
 			<div class="lcars-element button horizontal bottom lcars-u-2">32</div>
 
-			<div class="lcars-bar horizontal bottom fill"></div>
+			<div class="lcars-bar horizontal bottom fill">
+				<div class="lcars-title right">LCARS DS</div>
+			</div>
 			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal bottom right-end"></div>
+			<div class="lcars-bar horizontal bottom right-end decorated"></div>
 
 		</div>
 
@@ -153,20 +162,19 @@
 
 		<div class="lower-divider lcars-row ">
 			<!-- ELBOW -->
-				<div class="lcars-elbow left-bottom lcars-periwinkle-active-bg-i"></div>
+				<div class="lcars-elbow left-bottom lcars-active-bg active-color-periwinkle infrequent"></div>
 
 				<!-- BAR WITH TITLE -->
 				<div class="lcars-bar spacer"></div>
 				<div class="lcars-element button horizontal lcars-lilac-bg">01</div>
-				<div class="lcars-element button horizontal lcars-lilac-active-bg-m">25</div>
-				<div class="lcars-element button horizontal lcars-eggplant-active-bg-m lcars-u-2">22</div>
+				<div class="lcars-element button horizontal lcars-active-bg active-color-lilac medium">25</div>
+				<div class="lcars-element button horizontal lcars-active-bg active-color-eggplant medium lcars-u-2">22</div>
 				
 				<div class="lcars-bar horizontal fill">
-					<div class="lcars-title right">LCARS DS</div>
 				</div>
 
 				<!-- ROUNDED EDGE DECORATED -->
-				<div class="lcars-bar horizontal right-end decorated"></div>
+				<div class="lcars-bar horizontal right-end"></div>
 		</div>
 
 		<!-- LOWER CONTAINER -->
@@ -177,15 +185,15 @@
 			<div class="left-menu lcars-column lcars-u-1">
 
 				<!-- FILLER - Example menu actions -->
-				<div class="lcars-element button lcars-u-1-1 lcars-periwinkle-active-bg-i">9</div>		
-				<div class="lcars-element button lcars-u-1-1 lcars-dodger-blue-bg lcars-bahama-blue-active-bg-l">1</div>
-				<div class="lcars-bar lcars-u-1-1"></div>
+				<div class="lcars-element button lcars-u-1-1 lcars-active-bg active-color-periwinkle infrequent">9</div>		
+				<div class="lcars-element button lcars-u-1-1 lcars-dodger-blue-bg lcars-active-bg active-color-bahama-blue long">1</div>
+				<div class="lcars-bar lcars-vu-1"></div>
 			</div>
 
 			<!-- start data -->
 			<div class="lcars-data hidden-scrollbars">
 				<!-- COLUMN LAYOUT -->
-				<div class="lcars-column lcars-u-5">
+				<div class="lcars-column lcars-u-6">
 
 					<h1>LCARS</h1>
 
@@ -346,16 +354,22 @@
 						<li><span><pre class="lcars-rust-color">big</pre>: font-size 150%</span></li>
 						<li><span><pre class="lcars-rust-color">large</pre>: font-size 200%</span></li>
 						<li><span><pre class="lcars-rust-color">huge</pre>: font-size 400%</span></li>
-						<li><span><pre class="lcars-rust-color">huge</pre>: font-size 400%</span></li>
 						<li><span><pre class="lcars-rust-color">centered</pre>: center content horizontally</span></li>
-						<li><span><pre class="lcars-rust-color">full-centered</pre>: center content horizontally and vertically</span></li>
 						<li><span><pre class="lcars-rust-color">right</pre>: align content to the right</span></li>
+						<li><span><pre class="lcars-rust-color">centered-left</pre>: align content to the left and center vertically</span></li>
+						<li><span><pre class="lcars-rust-color">full-centered</pre>: center content horizontally and vertically</span></li>
 						<li><span><pre class="lcars-rust-color">centered-right</pre>: align content to the right and center vertically</span></li>
 						<li><span><pre class="lcars-rust-color">bottom</pre>: align content to the bottom</span></li>
 						<li><span><pre class="lcars-rust-color">bottom-centered</pre>: align content to the bottom and center horizontally</span></li>
 						<li><span><pre class="lcars-rust-color">bottom-right</pre>: align content to the bottom and to the right</span></li>
 					</ul>
 					</p>
+
+					<div id="text-box" class="lcars-text-box large bottom">Example</div>
+					<div class="lcars-text-box lcars-gray-bg">text-box</div>
+					<div class="lcars-text-box big full-centered lcars-gray-bg">big</div>
+					<div class="lcars-text-box large full-centered lcars-gray-bg">large</div>
+					<div class="lcars-text-box huge bottom lcars-gray-bg">huge</div>
 
 					<!-- ELEMENT -->
 					<h2>Element</h2>

@@ -1,47 +1,39 @@
 // LCARS Active
 :root
-  --animation-delay 2s // javascript should update this to a random value between 2 and 20
   --active-color default-color-highlight
 
 short-time = 11s
 medium-time = 3 * short-time
 long-time = 5 * medium-time
 infrequent = 19 * short-time
+// trying to introduce some variablility to the timing, for spontaneity
+stall = 2.2s
+tardy = 4.33s
+late = 6.55s
 
-// default active animation
-@keyframes active
-  50%
+/* All kinds of possibilities */
+
+@keyframes active-background
+  56%
     background-color var(--active-color)
 
-// Creates active animations - I'd like to introduce variability, but each variant of animation requires a new class
-// this initial animation toggles between an active background color and no specified color
-create-animations(suffix, colors)
+div .{prefix}active-bg
+  animation active-background 4s steps(1) infinite // color/duration not specified
+  &.short
+    animation-duration short-time
+  &.medium
+    animation-duration medium-time
+  &.long
+    animation-duration long-time
+  &.infrequent
+    animation-duration infrequent
+  &.stall
+    animation-delay stall
+  &.tardy
+    animation-delay tardy
+  &.late
+    animation-delay late
   for c, v in colors
-    name = suffix + c
-    @keyframes name
-      65%
-        background-color v
-      // 20%, 45%, 70%, 95%
-      //   background-color none
-      // 7%, 32%, 58%, 83%, 100%
-      //   background-color v
+    &.active-color-{c}
+      --active-color v
 
-
-// Creates active color classes
-create-colors(prop, suffix, duration, colors)
-	for c, v in colors
-    div .{prefix}{c}-{suffix}
-      {prop} active- + c duration steps(1) infinite
-
-
-// LCARS colors (background-color)
-create-colors('animation', 'active-bg-s', short-time, colors)
-create-colors('animation', 'active-bg-m', medium-time, colors)
-create-colors('animation', 'active-bg-l', long-time, colors)
-create-colors('animation', 'active-bg-i', infrequent, colors)
-create-animations('active-', colors)
-
-
-animation-name = $animate-prefix
-.{prefix}active
-  animation active medium-time steps(1) infinite
