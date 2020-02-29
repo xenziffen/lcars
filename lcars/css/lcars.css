@@ -1818,6 +1818,7 @@ a.lcars-text-box.blink {
 }
 :root {
   --active-color: #c69;
+  --active-highlight-color: #c69;
 }
 .lcars-active-bg.lcars-active-bg {
   animation: active-background 4s steps(1) infinite;
@@ -1944,6 +1945,9 @@ a.lcars-text-box.blink {
 }
 .lcars-active-bg.lcars-active-bg.active-color-tamarillo {
   --active-color: #821;
+}
+.lcars-active-bg.lcars-active-bg.lcars-element.button:active {
+  --active-color: var(--active-highlight-color);
 }
 @-moz-keyframes active-background {
   56% {

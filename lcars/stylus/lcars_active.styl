@@ -1,6 +1,8 @@
 // LCARS Active
 :root
   --active-color default-color-highlight
+  // this allows an alternative :active color for buttons that are 'active'
+  --active-highlight-color default-color-highlight
 
 short-time = 11s
 medium-time = 3 * short-time
@@ -33,7 +35,11 @@ late = 6.55s
     animation-delay tardy
   &.late
     animation-delay late
+  // all the colors can be active colors
   for c, v in colors
     &.active-color-{c}
       --active-color v
-
+  // remember to handle psuedo-classes    
+  &.{prefix}element.button:active
+    --active-color var(--active-highlight-color)
+  
