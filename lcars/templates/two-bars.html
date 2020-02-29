@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="black">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="black">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>LCARS</title>
+  <link rel="stylesheet" href="../css/lcars.css">
+  <style>
+
+  html, body { background: black }
+  p, h1, h2, h3 {
+    margin-top: 1em;
+  }
+
+	pre {
+		display: inline;
+				white-space: pre-line;
+				word-wrap: break-word;
+	}
+  </style>
+</head>
+<body>
+	<div class="lcars-app-container framed">
+		<!-- TOP DIVIDER ==================================================== -->
+
+		<div class="lcars-column">
+      <div class="top-divider lcars-row">
+
+        <!-- ELBOW -->
+        <div class="lcars-bar horizontal left-end decorated"></div>
+
+        <!-- BAR -->
+        <div class="lcars-bar spacer"></div>
+
+        <div class="lcars-bar horizontal fill">
+          <div class="lcars-title right">LCARS DS</div>
+        </div>
+        <!-- ROUNDED EDGE -->
+        <div class="lcars-bar horizontal right-end decorated"></div>
+
+  		</div>
+    </div>
+
+		<!-- LOWER DIVIDER ==================================================== -->
+
+		<div class="lower-divider lcars-row ">
+			<!-- ELBOW -->
+				<div class="lcars-bar horizontal bottom left-end decorated"></div>
+
+				<!-- ROUNDED EDGE DECORATED -->
+				<div class="lcars-bar horizontal bottom fill right-end decorated"></div>
+		</div>
+	</div>
+
+
+	<audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
+	<script src="js/lcars_audio.js"></script>
+
+</body>
+</html>

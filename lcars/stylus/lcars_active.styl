@@ -17,7 +17,7 @@ late = 6.55s
   56%
     background-color var(--active-color)
 
-div .{prefix}active-bg
+.{prefix}active-bg.{prefix}active-bg // doubled up for more specificity
   animation active-background 4s steps(1) infinite // color/duration not specified
   &.short
     animation-duration short-time
