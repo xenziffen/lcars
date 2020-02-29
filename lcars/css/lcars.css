@@ -717,8 +717,8 @@ h6 {
 .lcars-element.button {
   cursor: pointer;
 }
-.lcars-element.button:active {
-  background-color: #c69 !important;
+.lcars-element.button.button:active {
+  background-color: #c69;
 }
 .lcars-element.button.horizontal {
   height: 1.5em;
