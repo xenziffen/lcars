@@ -1,0 +1,49 @@
+// LCARS Frame
+// Creates a static frame for the lcars elements
+// Should be placed directly on the <body> element, before page content
+
+html body
+.{prefix}container
+  background-color black
+  
+  &.{prefix}frame // margin needed to initially position material
+    &.top
+      margin-top (2 * base-height)
+    &.left
+      margin-left (2 * base-width)
+    &.bottom
+      margin-bottom (2 * base-height)
+    &.right
+      margin-right (2 * base-width)
+
+  &.{prefix}framed
+    margin (2 * base-height) (2 * base-width) (2 * base-height) (2 * base-width)
+
+  & .{prefix}header
+    position fixed
+    top 0
+    background-color black
+
+  & .{prefix}footer
+    position fixed
+    bottom 0
+    background-color black
+
+.{prefix}frame // this is used when the content should be in a container
+  position fixed
+  display flex
+  flex-direction row
+  border solid black base-spacing
+  z-index 10
+
+  &.flush-top
+    padding-top 0
+  &.flush-left
+    padding-left 0
+  &.flush-bottom
+    padding-bottom 0
+  &.flush-right
+    padding-right 0
+  
+  > :last-child
+    margin-top auto

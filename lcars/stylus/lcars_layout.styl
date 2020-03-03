@@ -1,12 +1,13 @@
 // LCARS Grid System
 
 .{prefix}row
-  display inline-flex
+  display flex
   flex-direction row
-  width 100%
-
+  
   &.fill
-    flex 1
+    flex-grow 1
+    flex-shrink 0
+    flex-basis 0
 
   &.centered
     justify-content center
@@ -30,16 +31,21 @@
     margin-right auto
     margin-left 0
     flex-grow 1
+    flex-shrink 0
+    flex-basis 0
 
   > *
     margin-right base-spacing
 
 .{prefix}column
-  display inline-flex
+  display flex
   flex-direction column
-
+  align-self start
+  
   &.fill
-    flex 1
+    flex-grow 1
+    flex-shrink 0
+    flex-basis 0
 
   &.centered
     justify-content center
@@ -63,6 +69,8 @@
     margin-top auto
     margin-bottom 0
     flex-grow 1
+    flex-shrink 0
+    flex-basis 0
 
   > *
     margin-bottom base-spacing

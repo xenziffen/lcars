@@ -380,12 +380,13 @@ h6 {
   background: transparent;
 }
 .lcars-row {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  width: 100%;
 }
 .lcars-row.fill {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
 .lcars-row.centered {
   justify-content: center;
@@ -409,16 +410,21 @@ h6 {
   margin-right: auto;
   margin-left: 0;
   flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
 .lcars-row > * {
   margin-right: 0.25em;
 }
 .lcars-column {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  align-self: start;
 }
 .lcars-column.fill {
-  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
 .lcars-column.centered {
   justify-content: center;
@@ -442,6 +448,8 @@ h6 {
   margin-top: auto;
   margin-bottom: 0;
   flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
 .lcars-column > * {
   margin-bottom: 0.25em;
@@ -459,7 +467,7 @@ h6 {
   z-index: 5;
 }
 .lcars-elbow span {
-  display: inline-block;
+  display: block;
   position: absolute;
   bottom: 0;
   padding: 0.25em;
@@ -580,13 +588,17 @@ h6 {
   min-height: calc(1px + 0.25em) !important;
   max-height: calc(1px + 0.25em) !important;
 }
+.lcars-row > .lcars-bar {
+  height: 1.5em;
+  min-height: 1.5em;
+}
 .lcars-bar {
   position: relative;
   color: #000;
   height: 3em;
   width: 7.5em;
   margin: 0;
-  display: inline-flex;
+  display: flex;
   background-color: #fc6;
   z-index: 5;
 }
@@ -606,20 +618,16 @@ h6 {
   min-height: 0.5em;
   max-height: 0.5em;
 }
-.lcars-bar.horizontal {
-  height: 1.5em;
-  min-height: 1.5em;
-}
-.lcars-bar.horizontal.left-space {
+.lcars-bar.double-spacer.left-space {
   margin-left: 0.25em;
 }
-.lcars-bar.horizontal.left-double-space {
+.lcars-bar.double-spacer.left-double-space {
   margin-left: 0.5em;
 }
-.lcars-bar.horizontal.right-space {
+.lcars-bar.double-spacer.right-space {
   margin-right: 0.25em;
 }
-.lcars-bar.horizontal.right-double-space {
+.lcars-bar.double-spacer.right-double-space {
   margin-right: 0.5em;
 }
 .lcars-bar.start-space {
@@ -681,6 +689,11 @@ h6 {
   margin-left: auto;
   margin-right: 0.833333333333333em;
 }
+.lcars-row > .lcars-bar ~ .lcars-element,
+.lcars-row > .lcars-elbow ~ .lcars-element {
+  height: 1.5em;
+  min-height: 1.5em;
+}
 .lcars-element {
   position: relative;
   color: #000;
@@ -692,7 +705,7 @@ h6 {
   box-sizing: border-box;
   padding-left: 0.75em;
   padding-right: 0.75em;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
@@ -725,10 +738,6 @@ h6 {
 .lcars-element.button.button:active {
   background-color: #c69;
 }
-.lcars-element.button.horizontal {
-  height: 1.5em;
-  min-height: 1.5em;
-}
 .lcars-element.button.bottom {
   align-self: flex-end;
 }
@@ -745,7 +754,7 @@ h6 {
   padding-right: 0.25em;
 }
 .lcars-element .lcars-element-decorator {
-  display: inline-block;
+  display: block;
   position: absolute;
   top: 0;
   width: 2em;

@@ -1,5 +1,15 @@
 // LCARS - Elements
 
+
+// every element that is in a row that also has bars or elbows should be half-height
+.{prefix}row
+  > .{prefix}bar
+  > .{prefix}elbow
+    ~ .{prefix}element
+      height bar-height
+      min-height bar-height
+
+
 .{prefix}element
   position relative
   color black
@@ -11,7 +21,7 @@
   box-sizing border-box
   padding-left base-spacing * 3
   padding-right @padding-left
-  display inline-flex
+  display flex
   flex-direction row
   justify-content flex-end
   align-items flex-end
@@ -44,10 +54,6 @@
     &.button:active // repetition for emphasis
       background-color default-color-highlight
 
-    &.horizontal
-      height bar-height
-      min-height bar-height
-
     &.bottom
       align-self flex-end
 
@@ -64,7 +70,7 @@
     padding-right base-spacing
 
   .{prefix}element-decorator
-    display inline-block
+    display block
     position absolute
     top 0
     width (base-height/2) + double-spacing
