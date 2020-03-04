@@ -5,6 +5,12 @@
   <title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
   <style>
+	/* The templates supply <style> tags for values that aren't part of the LCARS spec */
+	/* lcars recommends the user set the body margins to 0, but that's not required */
+	body {
+		margin: 0;
+		background-color: black;
+	}
 
   p, h1, h2, h3 {
     margin-top: 1em;
@@ -16,480 +22,486 @@
     word-wrap: break-word;
   }
 
+	#randomdiv {
+		position: relative;
+		width: 90vw;
+		height: 90vh;
+		left: 5vw;
+		top: 5vh;
+		background-color: #00BB
+	}
+
   </style>
 </head>
-<body class="lcars-frame top left bottom">
-	<div class="lcars-root">
-		<!-- HEADER ==================================================== -->
+<body>
+	<!--div id="randomdiv"-->
+	<div class="lcars-display">
+		<div class="lcars-frame">
 
-		<div id="header" class="lcars-row header">
+			<!-- HEADER ==================================================== -->
+			<div class="lcars-row">
 
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+				<!-- ROUNDED EDGE DECORATED -->
+				<div class="lcars-bar left-end decorated"></div>
 
-			<!-- BAR WITH TITLE -->
-			<div class="lcars-bar horizontal">
-				<div class="lcars-title right">LCARS</div>
+				<!-- BAR WITH TITLE -->
+				<div class="lcars-bar fill">
+					<div class="lcars-title right">LCARS</div>
+				</div>
+
+				<!-- ROUNDED EDGE DECORATED -->
+				<div class="lcars-bar right-end decorated"></div>
 			</div>
 
-			<!-- ROUNDED EDGE DECORATED -->
-			<div class="lcars-bar horizontal right-end fill decorated"></div>
+			<!-- FOOTER ==================================================== -->
+			<div class="lcars-row ">
+
+				<!-- ROUNDED EDGE -->
+				<div class="lcars-bar left-end"></div>
+				<!-- ROUNDED EDGE -->
+				<div class="lcars-bar right-end fill"></div>
+			</div>
+			
 		</div>
 
-		<!-- SIDE MENU ================================================= -->
-
-		<div id="left-menu" class="lcars-column start-space lcars-u-1">
-
-			<!-- FILLER -->
-			<div class="lcars-bar lcars-u-1"></div>
-		</div>
-
-		<!-- FOOTER ==================================================== -->
-
-		<div id="footer" class="lcars-row ">
-			<!-- ELBOW -->
-			<div class="lcars-elbow left-top lcars-tan-bg"></div>
-			<!-- BAR -->
-			<div class="lcars-bar horizontal both-divider bottom"></div>
-			<!-- ROUNDED EDGE -->
-			<div class="lcars-bar horizontal right-end fill left-divider bottom"></div>
-		</div>
+		<!-- CONTENT -->
 		
-	</div>
-	<!-- COLUMN LAYOUT -->
-	<div class="lcars-column lcars-u-5">
+		<!-- COLUMN LAYOUT -->
+		<div class="lcars-content lcars-column lcars-u-5">
 
-		<h1>LCARS</h1>
+			<h1>LCARS</h1>
 
-		<p>
-			LCARS is a CSS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
-		</p>
-
-
-		<!-- LAYOUT -->
-		<h2>Layout</h2>
-
-		<span>Class: <code class="lcars-dodger-blue-color">lcars-row</code></span>
-		<p>
-		<span>Creates a row layout.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
-			<li><span><code  class="lcars-rust-color">centered</code>: center content horizontally</span></li>
-			<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
-			<li><span><code  class="lcars-rust-color">right</code>: align content to the right</span></li>
-			<li><span><code  class="lcars-rust-color">right-centered</code>: align content to the right and center vertically</span></li>
-			<li><span><code  class="lcars-rust-color">right-bottom</code>: align content to the bottom and to the right</span></li>
-		</ul>
-		</p>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-column</code></span>
-		<p>
-		<span>Creates a column layout.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
-			<li><span><code  class="lcars-rust-color">centered</code>: center content vertically</span></li>
-			<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
-			<li><span><code  class="lcars-rust-color">centered-right</code>: align content to the right and center vertically</span></li>
-			<li><span><code  class="lcars-rust-color">bottom</code>: align content to the bottom</span></li>
-			<li><span><code  class="lcars-rust-color">bottom-centered</code>: align content to the bottom and center horizontally</span></li>
-			<li><span><code  class="lcars-rust-color">left-menu</code>: add margin to right to align in left elbow</span></li>
-			<li><span><code  class="lcars-rust-color">right-menu</code>: add margin to left to align in right elbow</span></li>
-		</ul>
-		</p>
-
-		<!-- GRID -->
-		<h2>Grid</h2>
-
-		<p>
-		<span>LCARS has a strict grid system. Item sizes are set in multiples of unit size. </span>
-		<ul>
-			<li>The <code  class="lcars-dodger-blue-color">lcars-u-X</code> class sets the width to X * unit width (X = 0..16) </li>
-			<li>The <code  class="lcars-dodger-blue-color">lcars-vu-X</code> class sets the height to X * unit height (X = 0..16)</li>
-			<li>The <code  class="lcars-dodger-blue-color">lcars-u-X-Y</code> class sets the width to X * unit width and the height to Y times the unit height (X,Y = 0..16)</li>
-		</ul>
-		</p>
-
-		<!-- COLORS  -->
-		<h2 id="colors">Colors</h2>
-
-		Colors can be set by adding the classes:
-		<p>
-			<li><code  class="lcars-dodger-blue-color">lcars-COLORNAME-color</code>: Sets the text color to COLORNAME</li>
-			<li><code  class="lcars-dodger-blue-color">lcars-COLORNAME-bg</code>: Sets the background color to COLORNAME</li>
-		</p>
-
-		<span>This are the available colors:</span>
-
-		<p>
-		<div class="lcars-row">
-			<div class="lcars-column">
-				<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
-				<div class="lcars-element lcars-golden-tanoi-bg">golden-tanoi</div>
-				<div class="lcars-element lcars-neon-carrot-bg">neon-carrot</div>
-				<div class="lcars-element lcars-eggplant-bg">eggplant</div>
-				<div class="lcars-element lcars-anakiwa-bg">anakiwa</div>
-				<div class="lcars-element lcars-mariner-bg">mariner</div>
-				<div class="lcars-element lcars-bahama-blue-bg">bahama-blue</div>
-				<div class="lcars-element lcars-red-alert-bg">red-alert</div>
-				<div class="lcars-element lcars-white-bg">white</div>
-			</div>
-
-			<div class="lcars-column">
-				<div class="lcars-element lcars-blue-bell-bg">blue-bell</div>
-				<div class="lcars-element lcars-melrose-bg">melrose</div>
-				<div class="lcars-element lcars-lilac-bg">lilac</div>
-				<div class="lcars-element lcars-hopbush-bg">hopbush</div>
-				<div class="lcars-element lcars-chestnut-rose-bg">chestnut-rose</div>
-				<div class="lcars-element lcars-orange-peel-bg">orange-peel</div>
-				<div class="lcars-element lcars-atomic-tangerine-bg">atomic-tangerine</div>
-				<div class="lcars-element lcars-gray-bg">gray</div>
-			</div>
-
-			<div class="lcars-column">
-				<div class="lcars-element lcars-danub-bg">danub</div>
-				<div class="lcars-element lcars-indigo-bg">indigo</div>
-				<div class="lcars-element lcars-lavender-purple-bg">lavender-purple</div>
-				<div class="lcars-element lcars-cosmic-bg">cosmic</div>
-				<div class="lcars-element lcars-red-damask-bg">red-damask</div>
-				<div class="lcars-element lcars-medium-carmine-bg">medium-carmine</div>
-				<div class="lcars-element lcars-bourbon-bg">bourbon</div>
-				<div class="lcars-element lcars-sandy-brown-bg">sandy-brown</div>
-			</div>
-
-			<div class="lcars-column">
-				<div class="lcars-element lcars-periwinkle-bg">periwinkle</div>
-				<div class="lcars-element lcars-dodger-blue-bg">dodger-blue</div>
-				<div class="lcars-element lcars-dodger-blue-alt-bg">dodger-blue-alt</div>
-				<div class="lcars-element lcars-blue-bg">blue</div>
-				<div class="lcars-element lcars-navy-blue-bg">navy-blue</div>
-				<div class="lcars-element lcars-husk-bg">husk</div>
-				<div class="lcars-element lcars-rust-bg">rust</div>
-				<div class="lcars-element lcars-tamarillo-bg">tamarillo</div>
-			</div>
-		</div>
-		</p>
+			<p>
+				LCARS is a CSS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
+			</p>
 
 
-		<!-- HYPERLINKS -->
-		<h2>Hyperlinks</h2>
+			<!-- LAYOUT -->
+			<h2>Layout</h2>
 
-		<span>Class: <code  class="lcars-dodger-blue-color">:link :hover :focus :active :visited </code> (but note that these are pseudo-classes, automatically applied by the web browser)</span>
-		<p>
-		<a href="#">Hyperlinks are highlighted</a> with an energetic color, and not bluish.
-		<a>Hyperlinks without an href attribute</a> are a little different: they will highlight only when you hover.
-		Emphasis but subtlety.
-		</p>
-
-
-		<!-- Bar -->
-		<h2>Bar</h2>
-
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-bar</code></span>
-		<p>
-		<span>Used to fill spaces and to create top or bottom horizontal bars.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">spacer</code>: sets the width and height to base-spacing and background transparent. Use to create custom spacing eg between bars</span></li>
-			<li><span><code  class="lcars-rust-color">double-spacer</code>: sames as spacer, but double the size</span></li>
-			<li><span><code  class="lcars-rust-color">left-space</code>: add extra margin of base spacing to the left</span></li>
-			<li><span><code  class="lcars-rust-color">left-double-space</code>: add extra margin of double the base spacing to the left</span></li>
-			<li><span><code  class="lcars-rust-color">right-space</code>: add extra margin of base spacing to the right</span></li>
-			<li><span><code  class="lcars-rust-color">right-double-space</code>: add extra margin of double the base spacing to the right</span></li>
-			<li><span><code  class="lcars-rust-color">horizontal</code>: set the height to 1/3 of unitsize. Use it as top or bottom bars and with elbows.</span></li>
-			<li>
-				<span><code  class="lcars-rust-color">left-end</code>: sets the height and the width to 1/3 of the unit height and rounds the left edges. Use ate the edges of horizontal bars.</span>
-				<ul><li><span><code  class="lcars-rust-color">decorated</code>: adds a decorative stripe.</span></li></ul>
-			</li>
-				<span><code  class="lcars-rust-color">right-end</code>: sets the height and the width to 1/3 of the unit height and rounds the left right. Use ate the edges of horizontal bars.</span>
-				<ul><li><span><code  class="lcars-rust-color">decorated</code>: adds a decorative stripe.</span></li></ul>
-			</li>
-			<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
-			<li><span><code  class="lcars-rust-color">bottom</code>: align self to the bottom</span></li>
-		</ul>
-		</p>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-title</code></span>
-		<p>
-		<span>A title to use within a horizontal bar.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">right</code>: align self to the right.</span></li>
-		</ul>
-		</p>
-
-		<!-- TEXT BOX -->
-		<h2>Text Box</h2>
-
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-text-box</code></span>
-		<p>
-		<span>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">big</code>: font-size 150%</span></li>
-			<li><span><code  class="lcars-rust-color">large</code>: font-size 200%</span></li>
-			<li><span><code  class="lcars-rust-color">huge</code>: font-size 400%</span></li>
-			<li><span><code  class="lcars-rust-color">huge</code>: font-size 400%</span></li>
-			<li><span><code  class="lcars-rust-color">centered</code>: center content horizontally</span></li>
-			<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
-			<li><span><code  class="lcars-rust-color">right</code>: align content to the right</span></li>
-			<li><span><code  class="lcars-rust-color">centered-right</code>: align content to the right and center vertically</span></li>
-			<li><span><code  class="lcars-rust-color">bottom</code>: align content to the bottom</span></li>
-			<li><span><code  class="lcars-rust-color">bottom-centered</code>: align content to the bottom and center horizontally</span></li>
-			<li><span><code  class="lcars-rust-color">bottom-right</code>: align content to the bottom and to the right</span></li>
-		</ul>
-		</p>
-
-		<!-- ELEMENT -->
-		<h2>Element</h2>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-element</code></span>
-		<p>
-		<span>Elements are the basic blocks of LCARS. They can be used as buttons and indicators. Use the grid classes to set the size.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">left-rounded</code>: rounds the left edge</span></li>
-			<li><span><code  class="lcars-rust-color">right-rounded</code>: rounds the right edge</span></li>
-			<li><span><code  class="lcars-rust-color">rounded</code>: rounds the all edges</span></li>
-			<li><span><code  class="lcars-rust-color">button</code>: Add button behaviour. Optionally can include automatic <a href="#audio_section">Audible effect</a>.</span></li>
-		</ul>
-		</p>
-
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-element-addition</code></span>
-		<p>
-		<span>Use within element. Adds an indicator to the element.</span>
-		</p>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-element-decorator</code></span>
-
-		<p>
-		<span>Use within element. Adds a decorator to the left of the element.</span>
-
-		<ul>
-			<li><span><code  class="lcars-rust-color">right</code>: adds the decorator to the right </span></li>
-		</ul>
-		</p>
-
-
-		<h3>Example</h3>
-
-		<p>
-			<div class="lcars-column">
-				<div class="lcars-row">
-					<div class="lcars-column">
-						<div class="lcars-row">
-							<div class="lcars-element">Simple</div>
-							<div class="lcars-element button">Button</div>
-							<div class="lcars-element lcars-red-bg">Coloured</div>
-						</div>
-						<div class="lcars-row">
-							<div class="lcars-element left-rounded">left round</div>
-							<div class="lcars-element right-rounded">right round</div>
-							<div class="lcars-element rounded">round</div>
-						</div>
-					</div>
-					<div class="lcars-element lcars-u-1-2">tall</div>
-				</div>
-				<div class="lcars-row">
-					<div class="lcars-element lcars-u-2-1">double</div>
-					<div class="lcars-element lcars-u-2-1 lcars-red-bg">
-						<div> with </div>
-						<div class="lcars-element-addition ">addition</div>
-					</div>
-				</div>
-			</div>
-		</p>
-
-		<h2>Elbow</h2>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-elbow</code></span>
-		<p>
-			<span>The iconic elbow.</span>
+			<span>Class: <code class="lcars-dodger-blue-color">lcars-row</code></span>
+			<p>
+			<span>Creates a row layout.</span>
 
 			<ul>
-				<li><span><code  class="lcars-rust-color">right-top</code>: elbows faces to the top right. </span></li>
-				<li><span><code  class="lcars-rust-color">left-top</code>: elbows faces to the top left. </span></li>
-				<li><span><code  class="lcars-rust-color">right-bottom</code>: elbows faces to the bottom right. </span></li>
-				<li><span><code  class="lcars-rust-color">left-bottom</code>: elbows faces to the bottom left. </span></li>
+				<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
+				<li><span><code  class="lcars-rust-color">centered</code>: center content horizontally</span></li>
+				<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
+				<li><span><code  class="lcars-rust-color">right</code>: align content to the right</span></li>
+				<li><span><code  class="lcars-rust-color">right-centered</code>: align content to the right and center vertically</span></li>
+				<li><span><code  class="lcars-rust-color">right-bottom</code>: align content to the bottom and to the right</span></li>
 			</ul>
-		</p>
+			</p>
 
-		<h3>Example</h3>
-
-		<p>
-			<div class="lcars-row">
-				<div class="lcars-elbow right-top lcars-tan-bg">
-					<span>right-top</span>
-				</div>
-				<div class="lcars-bar double-spacer"></div>
-				<div class="lcars-elbow left-top lcars-tan-bg">
-					<span>left-top</span>
-				</div>
-				<div class="lcars-bar spacer"></div>
-				<div class="lcars-bar horizontal lcars-blue-bell-bg bottom both-divider"></div>
-				<div class="lcars-bar spacer"></div>
-				<div class="lcars-bar horizontal lcars-lavender-purple-bg right-end bottom"></div>
-		</div>
-		</p>
-		<p>
-			<div class="lcars-row">
-				<div class="lcars-elbow right-bottom lcars-tan-bg">
-					<span>right-bottom</span>
-				</div>
-				<div class="lcars-bar double-spacer"></div>
-				<div class="lcars-elbow left-bottom lcars-tan-bg">
-					<span>left-bottom</span>
-				</div>
-				<div class="lcars-bar spacer"></div>
-				<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
-				<div class="lcars-bar spacer"></div>
-				<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
-			</div>
-		</p>
-
-		<h2>BRACKETS</h2>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">lcars-bracket</code></span>
-		<p>
-			<span>Decorative Brackets. Use to group elements.</span>
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-column</code></span>
+			<p>
+			<span>Creates a column layout.</span>
 
 			<ul>
-				<li><span><code  class="lcars-rust-color">right</code>: right bracket </span></li>
-				<li><span><code  class="lcars-rust-color">left</code>: left bracket </span></li>
-				<li><span><code  class="lcars-rust-color">top</code>: top bracket </span></li>
-				<li><span><code  class="lcars-rust-color">bottom</code>: bottom bracket </span></li>
+				<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
+				<li><span><code  class="lcars-rust-color">centered</code>: center content vertically</span></li>
+				<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
+				<li><span><code  class="lcars-rust-color">centered-right</code>: align content to the right and center vertically</span></li>
+				<li><span><code  class="lcars-rust-color">bottom</code>: align content to the bottom</span></li>
+				<li><span><code  class="lcars-rust-color">bottom-centered</code>: align content to the bottom and center horizontally</span></li>
+				<li><span><code  class="lcars-rust-color">left-menu</code>: add margin to right to align in left elbow</span></li>
+				<li><span><code  class="lcars-rust-color">right-menu</code>: add margin to left to align in right elbow</span></li>
 			</ul>
-		</p>
-		<h3>Example</h3>
-		<p>
+			</p>
 
-		<div class="lcars-row">
-			<div class="lcars-bracket left"></div>
-			<div class="lcars-column">
-				<div class="lcars-element"></div>
-				<div class="lcars-element"></div>
-			</div>
-			<div class="lcars-bracket right"></div>
-		</div>
+			<!-- GRID -->
+			<h2>Grid</h2>
 
-		<div class="lcars-row">
-			<div class="lcars-bracket left hollow"></div>
-			<div class="lcars-column">
-				<div class="lcars-element"></div>
-				<div class="lcars-element"></div>
-			</div>
-			<div class="lcars-bracket right hollow"></div>
-		</div>
-
-		<div class="lcars-column lcars-u-2">
-			<div class="lcars-bracket top "></div>
-			<div class="lcars-row">
-				<div class="lcars-element"></div>
-				<div class="lcars-element"></div>
-			</div>
-			<div class="lcars-bracket bottom "></div>
-		</div>
-
-		<div class="lcars-column lcars-u-2">
-			<div class="lcars-bracket top hollow"></div>
-			<div class="lcars-row">
-				<div class="lcars-element"></div>
-				<div class="lcars-element"></div>
-			</div>
-			<div class="lcars-bracket bottom hollow"></div>
-		</div>
-
-		</p>
-
-		<h2 id="audio_section">Audio</h2>
-
-		<span>Class: <code  class="lcars-dodger-blue-color">button</code></span>
-		<p>
-			The button class will also automatically receive a sound-effect event if you include the following at the bottom of the page:
+			<p>
+			<span>LCARS has a strict grid system. Item sizes are set in multiples of unit size. </span>
 			<ul>
-				<li>special dummy audio element for automatic file format support detection</li>
-				<li>js/lcars_audio.js script reference</li>
+				<li>The <code  class="lcars-dodger-blue-color">lcars-u-X</code> class sets the width to X * unit width (X = 0..16) </li>
+				<li>The <code  class="lcars-dodger-blue-color">lcars-vu-X</code> class sets the height to X * unit height (X = 0..16)</li>
+				<li>The <code  class="lcars-dodger-blue-color">lcars-u-X-Y</code> class sets the width to X * unit width and the height to Y times the unit height (X,Y = 0..16)</li>
 			</ul>
-			<code class="lcars-dodger-blue-color">
-				&lt;audio id="audUmmy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
-				&lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
-			</code>
-		</p>
-		<p>
-			To arbitrarily assign sound effects, use your preferred element selector method and call these simple functions:
-			<code class="lcars-dodger-blue-color">
-				audioAcknowledge();
-				audioNegativeAcknowledge();
-				audioAlert();
-				audioReady();
-			</code>
-			For quick and dirty specific assignments, you can also just assign directly to the onClick attribute of any html element like so:
-			<code class="lcars-dodger-blue-color">
-				&lt;dev id="special_button" onclick="audioAcknowledge();"&gt;SPECIAL FUNCTION&lt;/div&gt;
-			</code>
+			</p>
+
+			<!-- COLORS  -->
+			<h2 id="colors">Colors</h2>
+
+			Colors can be set by adding the classes:
+			<p>
+				<li><code  class="lcars-dodger-blue-color">lcars-COLORNAME-color</code>: Sets the text color to COLORNAME</li>
+				<li><code  class="lcars-dodger-blue-color">lcars-COLORNAME-bg</code>: Sets the background color to COLORNAME</li>
+			</p>
+
+			<span>This are the available colors:</span>
+
+			<p>
+			<div class="lcars-row">
+				<div class="lcars-column">
+					<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
+					<div class="lcars-element lcars-golden-tanoi-bg">golden-tanoi</div>
+					<div class="lcars-element lcars-neon-carrot-bg">neon-carrot</div>
+					<div class="lcars-element lcars-eggplant-bg">eggplant</div>
+					<div class="lcars-element lcars-anakiwa-bg">anakiwa</div>
+					<div class="lcars-element lcars-mariner-bg">mariner</div>
+					<div class="lcars-element lcars-bahama-blue-bg">bahama-blue</div>
+					<div class="lcars-element lcars-red-alert-bg">red-alert</div>
+					<div class="lcars-element lcars-white-bg">white</div>
+				</div>
+
+				<div class="lcars-column">
+					<div class="lcars-element lcars-blue-bell-bg">blue-bell</div>
+					<div class="lcars-element lcars-melrose-bg">melrose</div>
+					<div class="lcars-element lcars-lilac-bg">lilac</div>
+					<div class="lcars-element lcars-hopbush-bg">hopbush</div>
+					<div class="lcars-element lcars-chestnut-rose-bg">chestnut-rose</div>
+					<div class="lcars-element lcars-orange-peel-bg">orange-peel</div>
+					<div class="lcars-element lcars-atomic-tangerine-bg">atomic-tangerine</div>
+					<div class="lcars-element lcars-gray-bg">gray</div>
+				</div>
+
+				<div class="lcars-column">
+					<div class="lcars-element lcars-danub-bg">danub</div>
+					<div class="lcars-element lcars-indigo-bg">indigo</div>
+					<div class="lcars-element lcars-lavender-purple-bg">lavender-purple</div>
+					<div class="lcars-element lcars-cosmic-bg">cosmic</div>
+					<div class="lcars-element lcars-red-damask-bg">red-damask</div>
+					<div class="lcars-element lcars-medium-carmine-bg">medium-carmine</div>
+					<div class="lcars-element lcars-bourbon-bg">bourbon</div>
+					<div class="lcars-element lcars-sandy-brown-bg">sandy-brown</div>
+				</div>
+
+				<div class="lcars-column">
+					<div class="lcars-element lcars-periwinkle-bg">periwinkle</div>
+					<div class="lcars-element lcars-dodger-blue-bg">dodger-blue</div>
+					<div class="lcars-element lcars-dodger-blue-alt-bg">dodger-blue-alt</div>
+					<div class="lcars-element lcars-blue-bg">blue</div>
+					<div class="lcars-element lcars-navy-blue-bg">navy-blue</div>
+					<div class="lcars-element lcars-husk-bg">husk</div>
+					<div class="lcars-element lcars-rust-bg">rust</div>
+					<div class="lcars-element lcars-tamarillo-bg">tamarillo</div>
+				</div>
+			</div>
+			</p>
+
+
+			<!-- HYPERLINKS -->
+			<h2>Hyperlinks</h2>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">:link :hover :focus :active :visited </code> (but note that these are pseudo-classes, automatically applied by the web browser)</span>
+			<p>
+			<a href="#">Hyperlinks are highlighted</a> with an energetic color, and not bluish.
+			<a>Hyperlinks without an href attribute</a> are a little different: they will highlight only when you hover.
+			Emphasis but subtlety.
+			</p>
+
+
+			<!-- Bar -->
+			<h2>Bar</h2>
+
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-bar</code></span>
+			<p>
+			<span>Used to fill spaces and to create top or bottom horizontal bars.</span>
+
+			<ul>
+				<li><span><code  class="lcars-rust-color">spacer</code>: sets the width and height to base-spacing and background transparent. Use to create custom spacing eg between bars</span></li>
+				<li><span><code  class="lcars-rust-color">double-spacer</code>: sames as spacer, but double the size</span></li>
+				<li><span><code  class="lcars-rust-color">left-space</code>: add extra margin of base spacing to the left</span></li>
+				<li><span><code  class="lcars-rust-color">left-double-space</code>: add extra margin of double the base spacing to the left</span></li>
+				<li><span><code  class="lcars-rust-color">right-space</code>: add extra margin of base spacing to the right</span></li>
+				<li><span><code  class="lcars-rust-color">right-double-space</code>: add extra margin of double the base spacing to the right</span></li>
+				<li><span><code  class="lcars-rust-color">horizontal</code>: set the height to 1/3 of unitsize. Use it as top or bottom bars and with elbows.</span></li>
+				<li>
+					<span><code  class="lcars-rust-color">left-end</code>: sets the height and the width to 1/3 of the unit height and rounds the left edges. Use ate the edges of horizontal bars.</span>
+					<ul><li><span><code  class="lcars-rust-color">decorated</code>: adds a decorative stripe.</span></li></ul>
+				</li>
+					<span><code  class="lcars-rust-color">right-end</code>: sets the height and the width to 1/3 of the unit height and rounds the left right. Use ate the edges of horizontal bars.</span>
+					<ul><li><span><code  class="lcars-rust-color">decorated</code>: adds a decorative stripe.</span></li></ul>
+				</li>
+				<li><span><code  class="lcars-rust-color">fill</code>: fill available space in column or row</span></li>
+				<li><span><code  class="lcars-rust-color">bottom</code>: align self to the bottom</span></li>
+			</ul>
+			</p>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-title</code></span>
+			<p>
+			<span>A title to use within a horizontal bar.</span>
+
+			<ul>
+				<li><span><code  class="lcars-rust-color">right</code>: align self to the right.</span></li>
+			</ul>
+			</p>
+
+			<!-- TEXT BOX -->
+			<h2>Text Box</h2>
+
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-text-box</code></span>
+			<p>
+			<span>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</span>
+
+			<ul>
+				<li><span><code  class="lcars-rust-color">big</code>: font-size 150%</span></li>
+				<li><span><code  class="lcars-rust-color">large</code>: font-size 200%</span></li>
+				<li><span><code  class="lcars-rust-color">huge</code>: font-size 400%</span></li>
+				<li><span><code  class="lcars-rust-color">huge</code>: font-size 400%</span></li>
+				<li><span><code  class="lcars-rust-color">centered</code>: center content horizontally</span></li>
+				<li><span><code  class="lcars-rust-color">full-centered</code>: center content horizontally and vertically</span></li>
+				<li><span><code  class="lcars-rust-color">right</code>: align content to the right</span></li>
+				<li><span><code  class="lcars-rust-color">centered-right</code>: align content to the right and center vertically</span></li>
+				<li><span><code  class="lcars-rust-color">bottom</code>: align content to the bottom</span></li>
+				<li><span><code  class="lcars-rust-color">bottom-centered</code>: align content to the bottom and center horizontally</span></li>
+				<li><span><code  class="lcars-rust-color">bottom-right</code>: align content to the bottom and to the right</span></li>
+			</ul>
+			</p>
+
+			<!-- ELEMENT -->
+			<h2>Element</h2>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-element</code></span>
+			<p>
+			<span>Elements are the basic blocks of LCARS. They can be used as buttons and indicators. Use the grid classes to set the size.</span>
+
+			<ul>
+				<li><span><code  class="lcars-rust-color">left-rounded</code>: rounds the left edge</span></li>
+				<li><span><code  class="lcars-rust-color">right-rounded</code>: rounds the right edge</span></li>
+				<li><span><code  class="lcars-rust-color">rounded</code>: rounds the all edges</span></li>
+				<li><span><code  class="lcars-rust-color">button</code>: Add button behaviour. Optionally can include automatic <a href="#audio_section">Audible effect</a>.</span></li>
+			</ul>
+			</p>
+
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-element-addition</code></span>
+			<p>
+			<span>Use within element. Adds an indicator to the element.</span>
+			</p>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-element-decorator</code></span>
+
+			<p>
+			<span>Use within element. Adds a decorator to the left of the element.</span>
+
+			<ul>
+				<li><span><code  class="lcars-rust-color">right</code>: adds the decorator to the right </span></li>
+			</ul>
+			</p>
+
 
 			<h3>Example</h3>
-			<div id="special_button" class="lcars-element rounded" onclick="audioAcknowledge();">SP FN</div>
-		</p>
-		<p>
-			One possible interpretation for the presumed semantic scheme for the LCARS audible signals is summarized in the following table 
-			with a mapping to semantically similar ASCII control codes. 
-			A couple of simple place-holder sound effects are included for demonstration purposes. 
-			To gain the full benefit of an authentic sounding LCARS interface, 
-			audio samples that match each of the semantic descriptions could be downloaded from elsewhere
-			on the web (<a href="http://www.stdimension.org/int/index.htm">STdimension media library</a> is an excellent resource) and renamed to match 
-			the Audio Filename column shown below, then transcoded to other audio file formats.
 
-			<table >
-			<thead>
-					<tr><th colspan="2">Code Number</th><th colspan="2"></th><th colspan="3">LCARS</th> 
-					<tr><th>Dec.</th> <th>Hex.</th> <th>Abbrev.</th> <th>Name</th><th>Description</th> <th>Semantic Description</th><th>Audio Filename</th><th>Element Subclass</th>
-			<thead>
-			<tbody>
-					<tr><td align="right">1</td><td align="right">1</td><td>SOH</td><td>START OF HEADING</td>
-				<td>Transmission control first character in header.  </td>
-				<td>Initialized, ready for input from user.</td><td>output_soh</td><td>output_initialized</td>
-					<tr><td align="right">2</td><td align="right">2</td><td>STX</td><td>START OF TEXT</td>
-				<td>Transmission control character before text.</td>
-				<td title="[tlrbL]">Communications transmission or file transfer started, normally. Content part rather than handshakes or queues.</td>
-				<td>output_stx</td><td>output_start_transmission</td>
-					<tr><td align="right">3</td><td align="right">3</td><td>ETX</td><td>END OF TEXT</td>
-				<td>Transmission control character which terminates a text.</td>
-				<td title="[Tlrbl]">Communications transmission or file transfer ended, normally.</td><td>output_etx</td><td>output_end_transmission</td>
-					<tr><td align="right">5</td><td align="right">5</td><td>ENQ</td><td>ENQUIRY</td>
-				<td>Transmission control character used as a request for a response from other end of connection</td>
-				<td title="[solfege:dodoso]">question, please answer, please confirm.</td><td>output_enq</td><td>output_enquiry</td>
-					<tr><td align="right">6</td><td align="right">6</td><td>ACK</td><td>ACKNOWLEDGE</td>
-				<td>Transmission control character transmitted by a receiver as an affirmative response to the sender.</td>
-				<td title="[solfege:DOsoDO]">input acknowledgement.</td><td>input_ack</td><td>input_acknowledge</td>
-					<tr><td align="right">7</td><td align="right">7</td><td>BEL</td><td>BELL</td>
-				<td>There is a need to call for attention; it may control alarm or attention devices.</td>
-				<td title="[TeeErrErrr]">hard failure/access denied/warning level 1.</td><td>output_bel</td><td>output_error</td>
-					<tr><td align="right">10</td><td align="right">A</td><td>LF</td><td>LINE FEED</td>
-				<td>Advances the active position		to the same character position                                of the next line.</td>
-				<td title="[drdrdrddddrrdddrdrdrdr]">scrolling sound.</td><td>output_lf</td><td>output_line_feed</td>
-					<tr><td align="right">21</td><td align="right">15</td><td>NAK</td><td>NEGATIVE ACKNOWLEDGE</td>
-				<td>Transmission control character transmitted by a receiver as a negative response to the sender.</td>
-				<td>keypress failure/low-level access denied/nonresponse. tinkTinkTink</td><td>input_nak</td><td>input_neg_acknowledge</td>
-					<tr><td align="right">24</td><td align="right">18</td><td>CAN</td><td>CANCEL</td>
-				<td>A character indicating that the data preceding it is in error.
-				As a result, this data is to be ignored. </td>
-				<td>Alarm/warning. maybe yellow alert? </td><td>output_can</td><td>output_alarm</td>
-					<tr><td align="right">30</td><td align="right">1E</td><td>RS</td><td>RECORD SEPARATOR</td>
-				<td>Separate and qualify data logically. Delimits a data item called a record.</td>
-				<td>small input acknowledgement. Basic Button Beep 2, lower tone.</td><td>input_rs</td><td>input_accept_record</td>
-					<tr><td align="right">31</td><td align="right">1F</td><td>US</td><td>UNIT SEPARATOR</td>
-				<td>Separate and qualify data logically; delimits a data item called a <i>unit</i>.</td>
-				<td>smallest input acknowledgement. Basic Button Beep.</td><td>input_us</td><td>input_accept_unit</td>
-					<tr><td align="right">127</td><td align="right">7F</td><td>DEL</td><td>DELETE</td><td><i><small>(not defined)</small></i></td>
-				<td>red alert</td><td>output_red_alert</td><td>output_red_alert</td>
-			</tbody>
-			</table>
-		</p>
+			<p>
+				<div class="lcars-column">
+					<div class="lcars-row">
+						<div class="lcars-column">
+							<div class="lcars-row">
+								<div class="lcars-element">Simple</div>
+								<div class="lcars-element button">Button</div>
+								<div class="lcars-element lcars-red-bg">Coloured</div>
+							</div>
+							<div class="lcars-row">
+								<div class="lcars-element left-rounded">left round</div>
+								<div class="lcars-element right-rounded">right round</div>
+								<div class="lcars-element rounded">round</div>
+							</div>
+						</div>
+						<div class="lcars-element lcars-u-1-2">tall</div>
+					</div>
+					<div class="lcars-row">
+						<div class="lcars-element lcars-u-2-1">double</div>
+						<div class="lcars-element lcars-u-2-1 lcars-red-bg">
+							<div> with </div>
+							<div class="lcars-element-addition ">addition</div>
+						</div>
+					</div>
+				</div>
+			</p>
+
+			<h2>Elbow</h2>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-elbow</code></span>
+			<p>
+				<span>The iconic elbow.</span>
+
+				<ul>
+					<li><span><code  class="lcars-rust-color">right-top</code>: elbows faces to the top right. </span></li>
+					<li><span><code  class="lcars-rust-color">left-top</code>: elbows faces to the top left. </span></li>
+					<li><span><code  class="lcars-rust-color">right-bottom</code>: elbows faces to the bottom right. </span></li>
+					<li><span><code  class="lcars-rust-color">left-bottom</code>: elbows faces to the bottom left. </span></li>
+				</ul>
+			</p>
+
+			<h3>Example</h3>
+
+			<p>
+				<div class="lcars-row" style="z-index: 0"><!-- required for Example of lcars-bars on page-->
+					<div class="lcars-elbow right-top lcars-tan-bg">
+						<span>right-top</span>
+					</div>
+					<div class="lcars-bar double-spacer"></div>
+					<div class="lcars-elbow left-top lcars-tan-bg">
+						<span>left-top</span>
+					</div>
+					<div class="lcars-bar spacer"></div>
+					<div class="lcars-bar horizontal lcars-blue-bell-bg bottom both-divider"></div>
+					<div class="lcars-bar spacer"></div>
+					<div class="lcars-bar horizontal lcars-lavender-purple-bg right-end bottom"></div>
+			</div>
+			</p>
+			<p>
+				<div class="lcars-row" style="z-index: 0">
+					<div class="lcars-elbow right-bottom lcars-tan-bg">
+						<span>right-bottom</span>
+					</div>
+					<div class="lcars-bar double-spacer"></div>
+					<div class="lcars-elbow left-bottom lcars-tan-bg">
+						<span>left-bottom</span>
+					</div>
+					<div class="lcars-bar spacer"></div>
+					<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
+					<div class="lcars-bar spacer"></div>
+					<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
+				</div>
+			</p>
+
+			<h2>BRACKETS</h2>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">lcars-bracket</code></span>
+			<p>
+				<span>Decorative Brackets. Use to group elements.</span>
+
+				<ul>
+					<li><span><code  class="lcars-rust-color">right</code>: right bracket </span></li>
+					<li><span><code  class="lcars-rust-color">left</code>: left bracket </span></li>
+					<li><span><code  class="lcars-rust-color">top</code>: top bracket </span></li>
+					<li><span><code  class="lcars-rust-color">bottom</code>: bottom bracket </span></li>
+				</ul>
+			</p>
+			<h3>Example</h3>
+			<p>
+
+			<div class="lcars-row">
+				<div class="lcars-bracket left"></div>
+				<div class="lcars-column">
+					<div class="lcars-element"></div>
+					<div class="lcars-element"></div>
+				</div>
+				<div class="lcars-bracket right"></div>
+			</div>
+
+			<div class="lcars-row">
+				<div class="lcars-bracket left hollow"></div>
+				<div class="lcars-column">
+					<div class="lcars-element"></div>
+					<div class="lcars-element"></div>
+				</div>
+				<div class="lcars-bracket right hollow"></div>
+			</div>
+
+			<div class="lcars-column lcars-u-2">
+				<div class="lcars-bracket top "></div>
+				<div class="lcars-row">
+					<div class="lcars-element"></div>
+					<div class="lcars-element"></div>
+				</div>
+				<div class="lcars-bracket bottom "></div>
+			</div>
+
+			<div class="lcars-column lcars-u-2">
+				<div class="lcars-bracket top hollow"></div>
+				<div class="lcars-row">
+					<div class="lcars-element"></div>
+					<div class="lcars-element"></div>
+				</div>
+				<div class="lcars-bracket bottom hollow"></div>
+			</div>
+
+			</p>
+
+			<h2 id="audio_section">Audio</h2>
+
+			<span>Class: <code  class="lcars-dodger-blue-color">button</code></span>
+			<p>
+				The button class will also automatically receive a sound-effect event if you include the following at the bottom of the page:
+				<ul>
+					<li>special dummy audio element for automatic file format support detection</li>
+					<li>js/lcars_audio.js script reference</li>
+				</ul>
+				<code class="lcars-dodger-blue-color">
+					&lt;audio id="audUmmy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
+					&lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
+				</code>
+			</p>
+			<p>
+				To arbitrarily assign sound effects, use your preferred element selector method and call these simple functions:
+				<code class="lcars-dodger-blue-color">
+					audioAcknowledge();
+					audioNegativeAcknowledge();
+					audioAlert();
+					audioReady();
+				</code>
+				For quick and dirty specific assignments, you can also just assign directly to the onClick attribute of any html element like so:
+				<code class="lcars-dodger-blue-color">
+					&lt;dev id="special_button" onclick="audioAcknowledge();"&gt;SPECIAL FUNCTION&lt;/div&gt;
+				</code>
+
+				<h3>Example</h3>
+				<div id="special_button" class="lcars-element rounded" onclick="audioAcknowledge();">SP FN</div>
+			</p>
+			<p>
+				One possible interpretation for the presumed semantic scheme for the LCARS audible signals is summarized in the following table 
+				with a mapping to semantically similar ASCII control codes. 
+				A couple of simple place-holder sound effects are included for demonstration purposes. 
+				To gain the full benefit of an authentic sounding LCARS interface, 
+				audio samples that match each of the semantic descriptions could be downloaded from elsewhere
+				on the web (<a href="http://www.stdimension.org/int/index.htm">STdimension media library</a> is an excellent resource) and renamed to match 
+				the Audio Filename column shown below, then transcoded to other audio file formats.
+
+				<table >
+				<thead>
+						<tr><th colspan="2">Code Number</th><th colspan="2"></th><th colspan="3">LCARS</th> 
+						<tr><th>Dec.</th> <th>Hex.</th> <th>Abbrev.</th> <th>Name</th><th>Description</th> <th>Semantic Description</th><th>Audio Filename</th><th>Element Subclass</th>
+				<thead>
+				<tbody>
+						<tr><td align="right">1</td><td align="right">1</td><td>SOH</td><td>START OF HEADING</td>
+					<td>Transmission control first character in header.  </td>
+					<td>Initialized, ready for input from user.</td><td>output_soh</td><td>output_initialized</td>
+						<tr><td align="right">2</td><td align="right">2</td><td>STX</td><td>START OF TEXT</td>
+					<td>Transmission control character before text.</td>
+					<td title="[tlrbL]">Communications transmission or file transfer started, normally. Content part rather than handshakes or queues.</td>
+					<td>output_stx</td><td>output_start_transmission</td>
+						<tr><td align="right">3</td><td align="right">3</td><td>ETX</td><td>END OF TEXT</td>
+					<td>Transmission control character which terminates a text.</td>
+					<td title="[Tlrbl]">Communications transmission or file transfer ended, normally.</td><td>output_etx</td><td>output_end_transmission</td>
+						<tr><td align="right">5</td><td align="right">5</td><td>ENQ</td><td>ENQUIRY</td>
+					<td>Transmission control character used as a request for a response from other end of connection</td>
+					<td title="[solfege:dodoso]">question, please answer, please confirm.</td><td>output_enq</td><td>output_enquiry</td>
+						<tr><td align="right">6</td><td align="right">6</td><td>ACK</td><td>ACKNOWLEDGE</td>
+					<td>Transmission control character transmitted by a receiver as an affirmative response to the sender.</td>
+					<td title="[solfege:DOsoDO]">input acknowledgement.</td><td>input_ack</td><td>input_acknowledge</td>
+						<tr><td align="right">7</td><td align="right">7</td><td>BEL</td><td>BELL</td>
+					<td>There is a need to call for attention; it may control alarm or attention devices.</td>
+					<td title="[TeeErrErrr]">hard failure/access denied/warning level 1.</td><td>output_bel</td><td>output_error</td>
+						<tr><td align="right">10</td><td align="right">A</td><td>LF</td><td>LINE FEED</td>
+					<td>Advances the active position		to the same character position                                of the next line.</td>
+					<td title="[drdrdrddddrrdddrdrdrdr]">scrolling sound.</td><td>output_lf</td><td>output_line_feed</td>
+						<tr><td align="right">21</td><td align="right">15</td><td>NAK</td><td>NEGATIVE ACKNOWLEDGE</td>
+					<td>Transmission control character transmitted by a receiver as a negative response to the sender.</td>
+					<td>keypress failure/low-level access denied/nonresponse. tinkTinkTink</td><td>input_nak</td><td>input_neg_acknowledge</td>
+						<tr><td align="right">24</td><td align="right">18</td><td>CAN</td><td>CANCEL</td>
+					<td>A character indicating that the data preceding it is in error.
+					As a result, this data is to be ignored. </td>
+					<td>Alarm/warning. maybe yellow alert? </td><td>output_can</td><td>output_alarm</td>
+						<tr><td align="right">30</td><td align="right">1E</td><td>RS</td><td>RECORD SEPARATOR</td>
+					<td>Separate and qualify data logically. Delimits a data item called a record.</td>
+					<td>small input acknowledgement. Basic Button Beep 2, lower tone.</td><td>input_rs</td><td>input_accept_record</td>
+						<tr><td align="right">31</td><td align="right">1F</td><td>US</td><td>UNIT SEPARATOR</td>
+					<td>Separate and qualify data logically; delimits a data item called a <i>unit</i>.</td>
+					<td>smallest input acknowledgement. Basic Button Beep.</td><td>input_us</td><td>input_accept_unit</td>
+						<tr><td align="right">127</td><td align="right">7F</td><td>DEL</td><td>DELETE</td><td><i><small>(not defined)</small></i></td>
+					<td>red alert</td><td>output_red_alert</td><td>output_red_alert</td>
+				</tbody>
+				</table>
+			</p>
+		</div>
+	<!--/div-->
 
 	</div>
 </div>

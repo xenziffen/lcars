@@ -1,5 +1,5 @@
 .lcars-gray-bg.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467);
+  background-color: #235;
 }
 .lcars-red-bg.lcars-red-bg {
   background-color: #c11;
@@ -101,7 +101,7 @@
   background-color: #821;
 }
 .lcars-gray-border.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467);
+  border-color: #235;
 }
 .lcars-red-border.lcars-red-border {
   border-color: #c11;
@@ -203,7 +203,7 @@
   border-color: #821;
 }
 .lcars-gray-color.lcars-gray-color {
-  color: rgba(34,51,85,0.467);
+  color: #235;
 }
 .lcars-red-color.lcars-red-color {
   color: #c11;
@@ -304,89 +304,142 @@
 .lcars-tamarillo-color.lcars-tamarillo-color {
   color: #821;
 }
-html,
-body {
+.lcars-display {
   font-family: "arial", monospace;
   color: #f90;
 }
-h1 {
+.lcars-display h1 {
   font-size: 270%;
   font-weight: bold;
 }
-h2 {
+.lcars-display h2 {
   font-size: 240%;
   font-weight: bold;
 }
-h3 {
+.lcars-display h3 {
   font-size: 200%;
   font-weight: bold;
 }
-h4 {
+.lcars-display h4 {
   font-size: 180%;
   font-weight: bold;
 }
-h5 {
+.lcars-display h5 {
   font-size: 160%;
   font-weight: bold;
 }
-h6 {
+.lcars-display h6 {
   font-size: 140%;
   font-weight: bold;
 }
-html body,
-.lcars-container {
+.lcars-app-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.lcars-app-container .lcars-container {
+  overflow: hidden;
+}
+.lcars-app-container .lcars-data {
+  padding-left: 2em;
+  flex-grow: 1;
+  overflow: scroll;
+}
+.lcars-app-container.framed {
+  margin: 0.5em;
+}
+.lcars-app-container.framed-left {
+  margin-left: 0.5em;
+}
+.lcars-app-container.framed-right {
+  margin-right: 0.5em;
+}
+.lcars-app-container.framed-top {
+  margin-top: 0.5em;
+}
+.lcars-app-container.framed-bottom {
+  margin-bottom: 0.5em;
+}
+.hidden-scrollbars {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hidden-scrollbars::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.lcars-display {
+  display: flex;
+  flex-direction: column;
   background-color: #000;
 }
-html body.lcars-frame.top,
-.lcars-container.lcars-frame.top {
-  margin-top: 6em;
+.lcars-display.landscape {
+  flex-direction: row;
 }
-html body.lcars-frame.left,
-.lcars-container.lcars-frame.left {
-  margin-left: 15em;
+.lcars-display .lcars-content {
+  align-self: center;
 }
-html body.lcars-frame.bottom,
-.lcars-container.lcars-frame.bottom {
-  margin-bottom: 6em;
+body > .lcars-display {
+  margin: 1.75em;
 }
-html body.lcars-frame.right,
-.lcars-container.lcars-frame.right {
-  margin-right: 15em;
-}
-html body.lcars-framed,
-.lcars-container.lcars-framed {
-  margin: 6em 15em 6em 15em;
-}
-html body .lcars-header,
-.lcars-container .lcars-header {
+body > .lcars-display .lcars-frame {
   position: fixed;
   top: 0;
-  background-color: #000;
-}
-html body .lcars-footer,
-.lcars-container .lcars-footer {
-  position: fixed;
+  left: 0;
   bottom: 0;
-  background-color: #000;
+  right: 0;
+}
+div > .lcars-display {
+  height: 100vh;
+}
+div > .lcars-display .lcars-frame {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-right: -100%;
+  margin-bottom: -10%;
+  float: left;
 }
 .lcars-frame {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
   border: solid #000 0.25em;
-  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  z-index: 2;
+}
+.lcars-frame .lcars-bar {
+  position: relative;
+  z-index: 5;
+}
+.lcars-frame.landscape {
+  flex-direction: row;
+}
+.lcars-frame.landscape > :last-child {
+  margin-top: 0;
+  margin-left: auto;
+}
+.lcars-frame.flush {
+  border: 0;
 }
 .lcars-frame.flush-top {
-  padding-top: 0;
+  border-top: 0;
 }
 .lcars-frame.flush-left {
-  padding-left: 0;
+  border-left: 0;
 }
 .lcars-frame.flush-bottom {
-  padding-bottom: 0;
+  border-bottom: 0;
 }
 .lcars-frame.flush-right {
-  padding-right: 0;
+  border-right: 0;
 }
 .lcars-frame > :last-child {
   margin-top: auto;
@@ -419,11 +472,7 @@ html body .lcars-footer,
   align-items: flex-end;
 }
 .lcars-row > :last-child {
-  margin-right: auto;
-  margin-left: 0;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
+  margin-right: 0;
 }
 .lcars-row > * {
   margin-right: 0.25em;
@@ -457,11 +506,7 @@ html body .lcars-footer,
   align-items: center;
 }
 .lcars-column > :last-child {
-  margin-top: auto;
   margin-bottom: 0;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
 }
 .lcars-column > * {
   margin-bottom: 0.25em;
@@ -612,7 +657,6 @@ html body .lcars-footer,
   margin: 0;
   display: flex;
   background-color: #fc6;
-  z-index: 5;
 }
 .lcars-bar.spacer {
   margin: 0;
@@ -658,7 +702,7 @@ html body .lcars-footer,
   content: '';
   display: block;
   position: absolute;
-  left: 1.5em;
+  left: 1.25em;
   width: 0.25em;
   height: 100%;
   background-color: #000;
@@ -674,7 +718,7 @@ html body .lcars-footer,
   content: '';
   display: block;
   position: absolute;
-  right: 1.5em;
+  right: 1.25em;
   width: 0.25em;
   height: 100%;
   background-color: #000;
@@ -692,14 +736,14 @@ html body .lcars-footer,
   color: #fff;
   background-color: #000;
   text-transform: uppercase;
-  margin-left: 0.833333333333333em;
+  margin-left: 0.833333333333335em;
   padding-left: 0.166666666666667em;
   padding-right: 0.166666666666667em;
   font-size: 1.5em;
 }
 .lcars-bar .lcars-title.right {
   margin-left: auto;
-  margin-right: 0.833333333333333em;
+  margin-right: 0.833333333333335em;
 }
 .lcars-row > .lcars-bar ~ .lcars-element,
 .lcars-row > .lcars-elbow ~ .lcars-element {
@@ -760,7 +804,7 @@ html body .lcars-footer,
   height: 100%;
   background-color: #000;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.000000000000001em;
   margin-left: 0.25em;
   padding-left: 0.25em;
   padding-right: 0.25em;
@@ -1871,7 +1915,7 @@ a.lcars-text-box.blink {
   animation-delay: 6.55s;
 }
 .lcars-active-bg.lcars-active-bg.active-color-gray {
-  --active-color: rgba(34,51,85,0.467);
+  --active-color: #235;
 }
 .lcars-active-bg.lcars-active-bg.active-color-red {
   --active-color: #c11;

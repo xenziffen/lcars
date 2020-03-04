@@ -1,49 +1,83 @@
 // LCARS Frame
 // Creates a static frame for the lcars elements
-// Should be placed directly on the <body> element, before page content
 
-html body
-.{prefix}container
-  background-color black
+.{prefix}display
+  display flex
+  flex-direction column
+  background-color background-color
+
+  &.landscape
+    flex-direction row
   
-  &.{prefix}frame // margin needed to initially position material
-    &.top
-      margin-top (2 * base-height)
-    &.left
-      margin-left (2 * base-width)
-    &.bottom
-      margin-bottom (2 * base-height)
-    &.right
-      margin-right (2 * base-width)
+  & .{prefix}content
+    //+ test on body margin (base-height / 2) + base-spacing
+    align-self center
 
-  &.{prefix}framed
-    margin (2 * base-height) (2 * base-width) (2 * base-height) (2 * base-width)
 
-  & .{prefix}header
+body > .{prefix}display // we use the 'fixed' designation when the frame is right on the body
+
+  & .{prefix}frame
     position fixed
     top 0
-    background-color black
-
-  & .{prefix}footer
-    position fixed
+    left 0    
     bottom 0
-    background-color black
+    right 0    
 
-.{prefix}frame // this is used when the content should be in a container
-  position fixed
+  & .{prefix}content
+    margin (base-height / 2) + base-spacing // based on as decorators
+
+div > .{prefix}display // when not positioned on the body, use sticky frame
+  position relative
+  height 100%
+  overflow auto
+  align-content flex-start
+  justify-content flex-start
+
+  & .{prefix}frame
+    position sticky
+    top 0
+    left 0
+    width 100%
+    height 100%
+    box-sizing border-box // remember to go back to overstock and comment on this -- https://stackoverflow.com/questions/11261270/css-position-element-fixed-inside-scrolling-container
+    flex-grow 0
+    flex-shrink 0
+
+  & .{prefix}content
+    margin (base-height / 2) + base-spacing // based on as decorators
+    position absolute
+
+.{prefix}frame
+  border solid border-color base-spacing
   display flex
-  flex-direction row
-  border solid black base-spacing
-  z-index 10
+  flex-direction column // default
+  pointer-events none
+  z-index 2
+
+  & .{prefix}bar
+    position relative
+    z-index z-index-frame
+
+  &.landscape
+    flex-direction row
+    > :last-child
+      margin-top 0
+      margin-left auto
+
+  &.flush
+    border 0
 
   &.flush-top
-    padding-top 0
+    border-top 0
+  
   &.flush-left
-    padding-left 0
+    border-left 0
+
   &.flush-bottom
-    padding-bottom 0
+    border-bottom 0
+
   &.flush-right
-    padding-right 0
+    border-right 0
   
   > :last-child
     margin-top auto

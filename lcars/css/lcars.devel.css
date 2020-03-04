@@ -4,7 +4,7 @@ body {
   background-position: 0 0, 0.25rem 0, 0.25rem -0.25rem, 0 -0.25rem;
 }
 .lcars-gray-bg.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467);
+  background-color: #235;
 }
 .lcars-red-bg.lcars-red-bg {
   background-color: #c11;
@@ -106,7 +106,7 @@ body {
   background-color: #821;
 }
 .lcars-gray-border.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467);
+  border-color: #235;
 }
 .lcars-red-border.lcars-red-border {
   border-color: #c11;
@@ -208,7 +208,7 @@ body {
   border-color: #821;
 }
 .lcars-gray-color.lcars-gray-color {
-  color: rgba(34,51,85,0.467);
+  color: #235;
 }
 .lcars-red-color.lcars-red-color {
   color: #c11;
@@ -309,32 +309,31 @@ body {
 .lcars-tamarillo-color.lcars-tamarillo-color {
   color: #821;
 }
-html,
-body {
+.lcars-display {
   font-family: "arial", monospace;
   color: #f90;
 }
-h1 {
+.lcars-display h1 {
   font-size: 270%;
   font-weight: bold;
 }
-h2 {
+.lcars-display h2 {
   font-size: 240%;
   font-weight: bold;
 }
-h3 {
+.lcars-display h3 {
   font-size: 200%;
   font-weight: bold;
 }
-h4 {
+.lcars-display h4 {
   font-size: 180%;
   font-weight: bold;
 }
-h5 {
+.lcars-display h5 {
   font-size: 160%;
   font-weight: bold;
 }
-h6 {
+.lcars-display h6 {
   font-size: 140%;
   font-weight: bold;
 }
@@ -379,6 +378,84 @@ h6 {
   width: 0;
   background: transparent;
 }
+.lcars-display {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+.lcars-display.landscape {
+  flex-direction: row;
+}
+.lcars-display .lcars-content {
+  align-self: center;
+}
+body > .lcars-display .lcars-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body > .lcars-display .lcars-content {
+  margin: 1.75em;
+}
+div > .lcars-display {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+div > .lcars-display .lcars-frame {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+div > .lcars-display .lcars-content {
+  margin: 1.75em;
+  position: absolute;
+}
+.lcars-frame {
+  border: solid rgba(187,51,51,0.733) 0.25em;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+  z-index: 2;
+}
+.lcars-frame .lcars-bar {
+  position: relative;
+  z-index: 5;
+}
+.lcars-frame.landscape {
+  flex-direction: row;
+}
+.lcars-frame.landscape > :last-child {
+  margin-top: 0;
+  margin-left: auto;
+}
+.lcars-frame.flush {
+  border: 0;
+}
+.lcars-frame.flush-top {
+  border-top: 0;
+}
+.lcars-frame.flush-left {
+  border-left: 0;
+}
+.lcars-frame.flush-bottom {
+  border-bottom: 0;
+}
+.lcars-frame.flush-right {
+  border-right: 0;
+}
+.lcars-frame > :last-child {
+  margin-top: auto;
+}
 .lcars-row {
   display: flex;
   flex-direction: row;
@@ -407,11 +484,7 @@ h6 {
   align-items: flex-end;
 }
 .lcars-row > :last-child {
-  margin-right: auto;
-  margin-left: 0;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
+  margin-right: 0;
 }
 .lcars-row > * {
   margin-right: 0.25em;
@@ -445,11 +518,7 @@ h6 {
   align-items: center;
 }
 .lcars-column > :last-child {
-  margin-top: auto;
   margin-bottom: 0;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
 }
 .lcars-column > * {
   margin-bottom: 0.25em;
@@ -600,7 +669,6 @@ h6 {
   margin: 0;
   display: flex;
   background-color: #fc6;
-  z-index: 5;
 }
 .lcars-bar.spacer {
   margin: 0;
@@ -646,7 +714,7 @@ h6 {
   content: '';
   display: block;
   position: absolute;
-  left: 1.5em;
+  left: 1.25em;
   width: 0.25em;
   height: 100%;
   background-color: #000;
@@ -662,7 +730,7 @@ h6 {
   content: '';
   display: block;
   position: absolute;
-  right: 1.5em;
+  right: 1.25em;
   width: 0.25em;
   height: 100%;
   background-color: #000;
@@ -680,14 +748,14 @@ h6 {
   color: #fff;
   background-color: #000;
   text-transform: uppercase;
-  margin-left: 0.833333333333333em;
+  margin-left: 0.833333333333335em;
   padding-left: 0.166666666666667em;
   padding-right: 0.166666666666667em;
   font-size: 1.5em;
 }
 .lcars-bar .lcars-title.right {
   margin-left: auto;
-  margin-right: 0.833333333333333em;
+  margin-right: 0.833333333333335em;
 }
 .lcars-row > .lcars-bar ~ .lcars-element,
 .lcars-row > .lcars-elbow ~ .lcars-element {
@@ -748,7 +816,7 @@ h6 {
   height: 100%;
   background-color: #000;
   color: #fff;
-  font-size: 2em;
+  font-size: 2.000000000000001em;
   margin-left: 0.25em;
   padding-left: 0.25em;
   padding-right: 0.25em;
@@ -784,6 +852,93 @@ h6 {
 .lcars-element .lcars-element-decorator.right:after {
   left: 0.25em;
   right: unset;
+}
+.lcars-text-box,
+a.lcars-text-box {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  width: 7.5em;
+  height: 3em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+}
+.lcars-text-box.big,
+a.lcars-text-box.big {
+  font-size: 150%;
+}
+.lcars-text-box.large,
+a.lcars-text-box.large {
+  font-size: 200%;
+}
+.lcars-text-box.huge,
+a.lcars-text-box.huge {
+  font-size: 400%;
+  height: 6em;
+}
+.lcars-text-box.centered,
+a.lcars-text-box.centered {
+  justify-content: center;
+}
+.lcars-text-box.right,
+a.lcars-text-box.right {
+  justify-content: flex-end;
+}
+.lcars-text-box.full-centered,
+a.lcars-text-box.full-centered {
+  justify-content: center;
+  align-items: center;
+}
+.lcars-text-box.centered-right,
+a.lcars-text-box.centered-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+.lcars-text-box.centered-left,
+a.lcars-text-box.centered-left {
+  justify-content: flex-start;
+  align-items: center;
+}
+.lcars-text-box.bottom,
+a.lcars-text-box.bottom {
+  align-items: flex-end;
+}
+.lcars-text-box.bottom-centered,
+a.lcars-text-box.bottom-centered {
+  justify-content: center;
+  align-items: flex-end;
+}
+.lcars-text-box.bottom-right,
+a.lcars-text-box.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.lcars-text-box.blink,
+a.lcars-text-box.blink {
+  animation: blinker 1s linear infinite;
+}
+@-moz-keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+@-o-keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
 }
 .lcars-bracket {
   background-color: #fc6;
@@ -1742,4 +1897,157 @@ h6 {
 }
 .lcars-u-16.half {
   width: 119.875em;
+}
+:root {
+  --active-color: #c69;
+  --active-highlight-color: #c69;
+}
+.lcars-active-bg.lcars-active-bg {
+  animation: active-background 4s steps(1) infinite;
+}
+.lcars-active-bg.lcars-active-bg.short {
+  animation-duration: 11s;
+}
+.lcars-active-bg.lcars-active-bg.medium {
+  animation-duration: 33s;
+}
+.lcars-active-bg.lcars-active-bg.long {
+  animation-duration: 165s;
+}
+.lcars-active-bg.lcars-active-bg.infrequent {
+  animation-duration: 209s;
+}
+.lcars-active-bg.lcars-active-bg.stall {
+  animation-delay: 2.2s;
+}
+.lcars-active-bg.lcars-active-bg.tardy {
+  animation-delay: 4.33s;
+}
+.lcars-active-bg.lcars-active-bg.late {
+  animation-delay: 6.55s;
+}
+.lcars-active-bg.lcars-active-bg.active-color-gray {
+  --active-color: #235;
+}
+.lcars-active-bg.lcars-active-bg.active-color-red {
+  --active-color: #c11;
+}
+.lcars-active-bg.lcars-active-bg.active-color-white {
+  --active-color: #fff;
+}
+.lcars-active-bg.lcars-active-bg.active-color-black {
+  --active-color: #000;
+}
+.lcars-active-bg.lcars-active-bg.active-color-pale-canary {
+  --active-color: #ff9;
+}
+.lcars-active-bg.lcars-active-bg.active-color-golden-tanoi {
+  --active-color: #fc6;
+}
+.lcars-active-bg.lcars-active-bg.active-color-neon-carrot {
+  --active-color: #f93;
+}
+.lcars-active-bg.lcars-active-bg.active-color-eggplant {
+  --active-color: #646;
+}
+.lcars-active-bg.lcars-active-bg.active-color-lilac {
+  --active-color: #c9c;
+}
+.lcars-active-bg.lcars-active-bg.active-color-anakiwa {
+  --active-color: #9cf;
+}
+.lcars-active-bg.lcars-active-bg.active-color-mariner {
+  --active-color: #36c;
+}
+.lcars-active-bg.lcars-active-bg.active-color-bahama-blue {
+  --active-color: #069;
+}
+.lcars-active-bg.lcars-active-bg.active-color-blue-bell {
+  --active-color: #99c;
+}
+.lcars-active-bg.lcars-active-bg.active-color-melrose {
+  --active-color: #99f;
+}
+.lcars-active-bg.lcars-active-bg.active-color-hopbush {
+  --active-color: #c69;
+}
+.lcars-active-bg.lcars-active-bg.active-color-chestnut-rose {
+  --active-color: #c66;
+}
+.lcars-active-bg.lcars-active-bg.active-color-orange-peel {
+  --active-color: #f96;
+}
+.lcars-active-bg.lcars-active-bg.active-color-atomic-tangerine {
+  --active-color: #f90;
+}
+.lcars-active-bg.lcars-active-bg.active-color-danub {
+  --active-color: #68c;
+}
+.lcars-active-bg.lcars-active-bg.active-color-indigo {
+  --active-color: #45b;
+}
+.lcars-active-bg.lcars-active-bg.active-color-lavender-purple {
+  --active-color: #97a;
+}
+.lcars-active-bg.lcars-active-bg.active-color-cosmic {
+  --active-color: #746;
+}
+.lcars-active-bg.lcars-active-bg.active-color-red-damask {
+  --active-color: #d64;
+}
+.lcars-active-bg.lcars-active-bg.active-color-medium-carmine {
+  --active-color: #a53;
+}
+.lcars-active-bg.lcars-active-bg.active-color-bourbon {
+  --active-color: #b62;
+}
+.lcars-active-bg.lcars-active-bg.active-color-sandy-brown {
+  --active-color: #e95;
+}
+.lcars-active-bg.lcars-active-bg.active-color-periwinkle {
+  --active-color: #cdf;
+}
+.lcars-active-bg.lcars-active-bg.active-color-dodger-blue {
+  --active-color: #59f;
+}
+.lcars-active-bg.lcars-active-bg.active-color-dodger-blue-alt {
+  --active-color: #36f;
+}
+.lcars-active-bg.lcars-active-bg.active-color-blue {
+  --active-color: #01e;
+}
+.lcars-active-bg.lcars-active-bg.active-color-navy-blue {
+  --active-color: #008;
+}
+.lcars-active-bg.lcars-active-bg.active-color-husk {
+  --active-color: #ba5;
+}
+.lcars-active-bg.lcars-active-bg.active-color-rust {
+  --active-color: #b41;
+}
+.lcars-active-bg.lcars-active-bg.active-color-tamarillo {
+  --active-color: #821;
+}
+.lcars-active-bg.lcars-active-bg.lcars-element.button:active {
+  --active-color: var(--active-highlight-color);
+}
+@-moz-keyframes active-background {
+  56% {
+    background-color: var(--active-color);
+  }
+}
+@-webkit-keyframes active-background {
+  56% {
+    background-color: var(--active-color);
+  }
+}
+@-o-keyframes active-background {
+  56% {
+    background-color: var(--active-color);
+  }
+}
+@keyframes active-background {
+  56% {
+    background-color: var(--active-color);
+  }
 }
